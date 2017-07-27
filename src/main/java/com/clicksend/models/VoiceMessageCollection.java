@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class VoiceMessageCollection 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5421698517763769234L;
+=======
+    private static final long serialVersionUID = 5213296937040580405L;
+>>>>>>> Stashed changes
     private List<VoiceMessage> messages;
     /** GETTER
      * Array of VoiceMessage items

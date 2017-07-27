@@ -27,7 +27,7 @@ public class MmsMessageCollectionBuilder {
     }
 
     /**
-     * Array of MmsMessage items
+     * Array of MmsMessage models
      */
     public MmsMessageCollectionBuilder messages(List<MmsMessage> messages) {
         mmsMessageCollection.setMessages(messages);

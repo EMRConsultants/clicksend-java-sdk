@@ -11,12 +11,16 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class AccountVerify 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5755346843599131181L;
+=======
+    private static final long serialVersionUID = 4914093786579090608L;
+>>>>>>> Stashed changes
     private String country;
     private String userPhone;
     private String type = "sms";
     /** GETTER
-     * TODO: Write general description for this method
+     * Country code
      */
     @JsonGetter("country")
     public String getCountry ( ) { 
@@ -24,7 +28,7 @@ public class AccountVerify
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Country code
      */
     @JsonSetter("country")
     public void setCountry (String value) { 
@@ -32,7 +36,7 @@ public class AccountVerify
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * User's phone number
      */
     @JsonGetter("user_phone")
     public String getUserPhone ( ) { 
@@ -40,7 +44,7 @@ public class AccountVerify
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * User's phone number
      */
     @JsonSetter("user_phone")
     public void setUserPhone (String value) { 
@@ -48,7 +52,7 @@ public class AccountVerify
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Type of verification
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -56,7 +60,7 @@ public class AccountVerify
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Type of verification
      */
     @JsonSetter("type")
     public void setType (String value) { 

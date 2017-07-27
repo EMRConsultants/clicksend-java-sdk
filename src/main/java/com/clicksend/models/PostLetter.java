@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostLetter 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 4843585335817425906L;
+=======
+    private static final long serialVersionUID = 5583637303720249939L;
+>>>>>>> Stashed changes
     private String fileUrl;
     private List<PostRecipient> recipients;
     private Boolean templateUsed = false;
@@ -19,7 +23,7 @@ public class PostLetter
     private Boolean colour = false;
     private String source = "sdk";
     /** GETTER
-     * TODO: Write general description for this method
+     * URL of file to send
      */
     @JsonGetter("file_url")
     public String getFileUrl ( ) { 
@@ -27,7 +31,7 @@ public class PostLetter
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * URL of file to send
      */
     @JsonSetter("file_url")
     public void setFileUrl (String value) { 
@@ -35,7 +39,7 @@ public class PostLetter
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Array of PostRecipient models
      */
     @JsonGetter("recipients")
     public List<PostRecipient> getRecipients ( ) { 
@@ -43,7 +47,7 @@ public class PostLetter
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Array of PostRecipient models
      */
     @JsonSetter("recipients")
     public void setRecipients (List<PostRecipient> value) { 
@@ -51,7 +55,7 @@ public class PostLetter
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Whether using our template
      */
     @JsonGetter("template_used")
     public Boolean getTemplateUsed ( ) { 
@@ -59,7 +63,7 @@ public class PostLetter
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Whether using our template
      */
     @JsonSetter("template_used")
     public void setTemplateUsed (Boolean value) { 
@@ -67,7 +71,7 @@ public class PostLetter
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Whether letter is duplex
      */
     @JsonGetter("duplex")
     public Boolean getDuplex ( ) { 
@@ -75,7 +79,7 @@ public class PostLetter
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Whether letter is duplex
      */
     @JsonSetter("duplex")
     public void setDuplex (Boolean value) { 
@@ -83,7 +87,7 @@ public class PostLetter
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Whether letter is in colour
      */
     @JsonGetter("colour")
     public Boolean getColour ( ) { 
@@ -91,7 +95,7 @@ public class PostLetter
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Whether letter is in colour
      */
     @JsonSetter("colour")
     public void setColour (Boolean value) { 
@@ -99,7 +103,7 @@ public class PostLetter
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Source being sent from
      */
     @JsonGetter("source")
     public String getSource ( ) { 
@@ -107,7 +111,7 @@ public class PostLetter
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Source being sent from
      */
     @JsonSetter("source")
     public void setSource (String value) { 

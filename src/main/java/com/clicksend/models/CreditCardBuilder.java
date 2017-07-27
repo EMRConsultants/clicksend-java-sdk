@@ -18,26 +18,41 @@ public class CreditCardBuilder {
         creditCard = new CreditCard();
     }
 
-    public CreditCardBuilder number(int number) {
+    /**
+     * Credit card number
+     */
+    public CreditCardBuilder number(String number) {
         creditCard.setNumber(number);
         return this;
     }
 
+    /**
+     * Expiry month of credit card
+     */
     public CreditCardBuilder expiryMonth(int expiryMonth) {
         creditCard.setExpiryMonth(expiryMonth);
         return this;
     }
 
+    /**
+     * Expiry year of credit card
+     */
     public CreditCardBuilder expiryYear(int expiryYear) {
         creditCard.setExpiryYear(expiryYear);
         return this;
     }
 
+    /**
+     * CVC number of credit card
+     */
     public CreditCardBuilder cvc(int cvc) {
         creditCard.setCvc(cvc);
         return this;
     }
 
+    /**
+     * Name printed on credit card
+     */
     public CreditCardBuilder name(String name) {
         creditCard.setName(name);
         return this;

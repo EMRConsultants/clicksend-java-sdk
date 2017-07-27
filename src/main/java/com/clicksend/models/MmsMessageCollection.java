@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class MmsMessageCollection 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5592998239082411285L;
+=======
+    private static final long serialVersionUID = 4741740100760653307L;
+>>>>>>> Stashed changes
     private String mediaFile;
     private List<MmsMessage> messages;
     /** GETTER
@@ -31,7 +35,7 @@ public class MmsMessageCollection
     }
  
     /** GETTER
-     * Array of MmsMessage items
+     * Array of MmsMessage models
      */
     @JsonGetter("messages")
     public List<MmsMessage> getMessages ( ) { 
@@ -39,7 +43,7 @@ public class MmsMessageCollection
     }
     
     /** SETTER
-     * Array of MmsMessage items
+     * Array of MmsMessage models
      */
     @JsonSetter("messages")
     public void setMessages (List<MmsMessage> value) { 

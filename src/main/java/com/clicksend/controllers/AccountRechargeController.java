@@ -70,7 +70,11 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4937741252737535313L;
+=======
+            private static final long serialVersionUID = 5327725423973258535L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -135,7 +139,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Update credit card info
-     * @param    creditCard    Required parameter: Example: 
+     * @param    creditCard    Required parameter: CreditCard model
      * @return    Returns the String response from the API call 
      */
     public String updateCreditCardInfo(
@@ -150,7 +154,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Update credit card info
-     * @param    creditCard    Required parameter: Example: 
+     * @param    creditCard    Required parameter: CreditCard model
      * @return    Returns the void response from the API call 
      */
     public void updateCreditCardInfoAsync(
@@ -172,7 +176,11 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5126417501440925621L;
+=======
+            private static final long serialVersionUID = 5026521860701388788L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -237,7 +245,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Get list of all packages
-     * @param    country    Optional parameter: Example: 
+     * @param    country    Optional parameter: Country code
      * @return    Returns the String response from the API call 
      */
     public String getPackagesList(
@@ -252,7 +260,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Get list of all packages
-     * @param    country    Optional parameter: Example: 
+     * @param    country    Optional parameter: Country code
      * @return    Returns the void response from the API call 
      */
     public void getPackagesListAsync(
@@ -268,7 +276,11 @@ public class AccountRechargeController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5014672264783947741L;
+=======
+            private static final long serialVersionUID = 4779594489127976322L;
+>>>>>>> Stashed changes
             {
                     put( "country", country );
             }});
@@ -277,7 +289,11 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4847356307403974897L;
+=======
+            private static final long serialVersionUID = 5021984767674005334L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -342,7 +358,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Purchase a package
-     * @param    packageId    Required parameter: Example: 
+     * @param    packageId    Required parameter: ID of package to purchase
      * @return    Returns the String response from the API call 
      */
     public String purchasePackage(
@@ -357,7 +373,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Purchase a package
-     * @param    packageId    Required parameter: Example: 
+     * @param    packageId    Required parameter: ID of package to purchase
      * @return    Returns the void response from the API call 
      */
     public void purchasePackageAsync(
@@ -373,7 +389,11 @@ public class AccountRechargeController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5205773206340288051L;
+=======
+            private static final long serialVersionUID = 4675229097651843320L;
+>>>>>>> Stashed changes
             {
                     put( "package_id", packageId );
             }});
@@ -382,7 +402,11 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5294103915164145026L;
+=======
+            private static final long serialVersionUID = 5216320598138324911L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -476,7 +500,11 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5377785526318836109L;
+=======
+            private static final long serialVersionUID = 4747598113453355851L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -541,7 +569,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Get specific Transaction
-     * @param    transactionId    Required parameter: Example: 
+     * @param    transactionId    Required parameter: ID of transaction to retrieve
      * @return    Returns the String response from the API call 
      */
     public String getTransaction(
@@ -556,7 +584,7 @@ public class AccountRechargeController extends BaseController {
 
     /**
      * Get specific Transaction
-     * @param    transactionId    Required parameter: Example: 
+     * @param    transactionId    Required parameter: ID of transaction to retrieve
      * @return    Returns the void response from the API call 
      */
     public void getTransactionAsync(
@@ -576,7 +604,11 @@ public class AccountRechargeController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5712951788403904587L;
+=======
+            private static final long serialVersionUID = 5267267191581325038L;
+>>>>>>> Stashed changes
             {
                     put( "transaction_id", transactionId );
             }});
@@ -585,7 +617,11 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5607817875037751795L;
+=======
+            private static final long serialVersionUID = 4847623210660141527L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

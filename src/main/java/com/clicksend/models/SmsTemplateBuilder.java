@@ -18,11 +18,17 @@ public class SmsTemplateBuilder {
         smsTemplate = new SmsTemplate();
     }
 
+    /**
+     * Name of template
+     */
     public SmsTemplateBuilder templateName(String templateName) {
         smsTemplate.setTemplateName(templateName);
         return this;
     }
 
+    /**
+     * Body of template
+     */
     public SmsTemplateBuilder body(String body) {
         smsTemplate.setBody(body);
         return this;

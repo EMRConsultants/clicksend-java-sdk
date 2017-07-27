@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class FaxMessageCollection 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5720217166845928576L;
+=======
+    private static final long serialVersionUID = 5673411421241235372L;
+>>>>>>> Stashed changes
     private List<FaxMessage> messages;
     private String fileUrl;
     /** GETTER
@@ -31,7 +35,7 @@ public class FaxMessageCollection
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * URL of file to send
      */
     @JsonGetter("file_url")
     public String getFileUrl ( ) { 
@@ -39,7 +43,7 @@ public class FaxMessageCollection
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * URL of file to send
      */
     @JsonSetter("file_url")
     public void setFileUrl (String value) { 

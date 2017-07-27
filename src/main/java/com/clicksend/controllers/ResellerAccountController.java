@@ -41,8 +41,8 @@ public class ResellerAccountController extends BaseController {
 
     /**
      * Reseller Account
-     * @param    clientUserId    Required parameter: Example: 
-     * @param    resellerAccount    Required parameter: Example: 
+     * @param    clientUserId    Required parameter: User ID of client
+     * @param    resellerAccount    Required parameter: ResellerAccount model
      * @return    Returns the String response from the API call 
      */
     public String updateResellerAccount(
@@ -58,8 +58,8 @@ public class ResellerAccountController extends BaseController {
 
     /**
      * Reseller Account
-     * @param    clientUserId    Required parameter: Example: 
-     * @param    resellerAccount    Required parameter: Example: 
+     * @param    clientUserId    Required parameter: User ID of client
+     * @param    resellerAccount    Required parameter: ResellerAccount model
      * @return    Returns the void response from the API call 
      */
     public void updateResellerAccountAsync(
@@ -80,7 +80,11 @@ public class ResellerAccountController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5494969194000731843L;
+=======
+            private static final long serialVersionUID = 5650521456200387769L;
+>>>>>>> Stashed changes
             {
                     put( "client_user_id", clientUserId );
             }});
@@ -89,7 +93,11 @@ public class ResellerAccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4827869895990431175L;
+=======
+            private static final long serialVersionUID = 4965914731744802102L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -183,7 +191,11 @@ public class ResellerAccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5081069925707421374L;
+=======
+            private static final long serialVersionUID = 5494471179360930934L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -248,7 +260,7 @@ public class ResellerAccountController extends BaseController {
 
     /**
      * Create reseller account
-     * @param    resellerAccount    Required parameter: Example: 
+     * @param    resellerAccount    Required parameter: ResellerAccount model
      * @return    Returns the String response from the API call 
      */
     public String createResellerAccount(
@@ -263,7 +275,7 @@ public class ResellerAccountController extends BaseController {
 
     /**
      * Create reseller account
-     * @param    resellerAccount    Required parameter: Example: 
+     * @param    resellerAccount    Required parameter: ResellerAccount model
      * @return    Returns the void response from the API call 
      */
     public void createResellerAccountAsync(
@@ -285,7 +297,11 @@ public class ResellerAccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4809036327249838366L;
+=======
+            private static final long serialVersionUID = 5212295123727817687L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -350,7 +366,7 @@ public class ResellerAccountController extends BaseController {
 
     /**
      * Get Reseller Account
-     * @param    clientUserId    Required parameter: Example: 
+     * @param    clientUserId    Required parameter: User ID of client
      * @return    Returns the String response from the API call 
      */
     public String getResellerAccount(
@@ -365,7 +381,7 @@ public class ResellerAccountController extends BaseController {
 
     /**
      * Get Reseller Account
-     * @param    clientUserId    Required parameter: Example: 
+     * @param    clientUserId    Required parameter: User ID of client
      * @return    Returns the void response from the API call 
      */
     public void getResellerAccountAsync(
@@ -381,7 +397,11 @@ public class ResellerAccountController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4853169260377626238L;
+=======
+            private static final long serialVersionUID = 5027183651719008729L;
+>>>>>>> Stashed changes
             {
                     put( "client_user_id", clientUserId );
             }});
@@ -390,7 +410,11 @@ public class ResellerAccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5757064411893471725L;
+=======
+            private static final long serialVersionUID = 5623057851542859772L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

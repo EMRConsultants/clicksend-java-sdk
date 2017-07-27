@@ -26,6 +26,9 @@ public class FaxMessageCollectionBuilder {
         return this;
     }
 
+    /**
+     * URL of file to send
+     */
     public FaxMessageCollectionBuilder fileUrl(String fileUrl) {
         faxMessageCollection.setFileUrl(fileUrl);
         return this;

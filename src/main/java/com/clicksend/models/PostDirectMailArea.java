@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostDirectMailArea 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5511636595896190575L;
+=======
+    private static final long serialVersionUID = 5070989696683209116L;
+>>>>>>> Stashed changes
     private int locationId;
     private int quantity;
     /** GETTER

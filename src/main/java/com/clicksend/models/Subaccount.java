@@ -11,8 +11,13 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Subaccount 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 4934000527030334118L;
     private List<String> apiUsername;
+=======
+    private static final long serialVersionUID = 5684869038709222199L;
+    private String apiUsername;
+>>>>>>> Stashed changes
     private String password;
     private String email;
     private String phoneNumber;
@@ -27,7 +32,7 @@ public class Subaccount
      * Your new api username.
      */
     @JsonGetter("api_username")
-    public List<String> getApiUsername ( ) { 
+    public String getApiUsername ( ) { 
         return this.apiUsername;
     }
     
@@ -35,7 +40,7 @@ public class Subaccount
      * Your new api username.
      */
     @JsonSetter("api_username")
-    public void setApiUsername (List<String> value) { 
+    public void setApiUsername (String value) { 
         this.apiUsername = value;
     }
  
