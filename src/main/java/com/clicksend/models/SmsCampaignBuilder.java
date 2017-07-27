@@ -21,7 +21,7 @@ public class SmsCampaignBuilder {
     /**
      * Your list id.
      */
-    public SmsCampaignBuilder listId(Object listId) {
+    public SmsCampaignBuilder listId(int listId) {
         smsCampaign.setListId(listId);
         return this;
     }
@@ -43,18 +43,18 @@ public class SmsCampaignBuilder {
     }
 
     /**
-     * Your schedule timestamp.
-     */
-    public SmsCampaignBuilder schedule(String schedule) {
-        smsCampaign.setSchedule(schedule);
-        return this;
-    }
-
-    /**
      * Your sender id - more info: http://help.clicksend.com/SMS/what-is-a-sender-id-or-sender-number.
      */
     public SmsCampaignBuilder from(String from) {
         smsCampaign.setFrom(from);
+        return this;
+    }
+
+    /**
+     * Your schedule timestamp.
+     */
+    public SmsCampaignBuilder schedule(Integer schedule) {
+        smsCampaign.setSchedule(schedule);
         return this;
     }
     /**

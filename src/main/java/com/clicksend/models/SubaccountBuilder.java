@@ -21,7 +21,7 @@ public class SubaccountBuilder {
     /**
      * Your new api username.
      */
-    public SubaccountBuilder apiUsername(List<String> apiUsername) {
+    public SubaccountBuilder apiUsername(String apiUsername) {
         subaccount.setApiUsername(apiUsername);
         return this;
     }

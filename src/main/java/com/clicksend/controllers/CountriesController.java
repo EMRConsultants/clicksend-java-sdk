@@ -69,7 +69,11 @@ public class CountriesController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4764755524608139394L;
+=======
+            private static final long serialVersionUID = 5416684333877367239L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

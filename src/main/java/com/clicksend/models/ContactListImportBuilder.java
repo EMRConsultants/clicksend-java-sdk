@@ -18,11 +18,17 @@ public class ContactListImportBuilder {
         contactListImport = new ContactListImport();
     }
 
+    /**
+     * URL of file to process
+     */
     public ContactListImportBuilder fileUrl(String fileUrl) {
         contactListImport.setFileUrl(fileUrl);
         return this;
     }
 
+    /**
+     * Order of fields in file
+     */
     public ContactListImportBuilder fieldOrder(List<String> fieldOrder) {
         contactListImport.setFieldOrder(fieldOrder);
         return this;

@@ -41,7 +41,7 @@ public class MMSController extends BaseController {
 
     /**
      * TODO: type endpoint description here
-     * @param    mmsMessages    Required parameter: Example: 
+     * @param    mmsMessages    Required parameter: MmsMessageCollection model
      * @return    Returns the String response from the API call 
      */
     public String sendMMS(
@@ -56,7 +56,7 @@ public class MMSController extends BaseController {
 
     /**
      * TODO: type endpoint description here
-     * @param    mmsMessages    Required parameter: Example: 
+     * @param    mmsMessages    Required parameter: MmsMessageCollection model
      * @return    Returns the void response from the API call 
      */
     public void sendMMSAsync(
@@ -78,7 +78,11 @@ public class MMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4825043436039078351L;
+=======
+            private static final long serialVersionUID = 4954653027245157122L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -143,7 +147,7 @@ public class MMSController extends BaseController {
 
     /**
      * Get Price for MMS sent
-     * @param    mmsMessages    Required parameter: Example: 
+     * @param    mmsMessages    Required parameter: MmsMessageCollection model
      * @return    Returns the String response from the API call 
      */
     public String getPrice(
@@ -158,7 +162,7 @@ public class MMSController extends BaseController {
 
     /**
      * Get Price for MMS sent
-     * @param    mmsMessages    Required parameter: Example: 
+     * @param    mmsMessages    Required parameter: MmsMessageCollection model
      * @return    Returns the void response from the API call 
      */
     public void getPriceAsync(
@@ -180,7 +184,11 @@ public class MMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5566796583689531211L;
+=======
+            private static final long serialVersionUID = 4913594019484393702L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

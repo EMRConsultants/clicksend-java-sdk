@@ -40,8 +40,8 @@ public class VoiceController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
-     * @param    voiceMessages    Required parameter: Example: 
+     * Send a voice call
+     * @param    voiceMessages    Required parameter: VoiceMessageCollection model
      * @return    Returns the String response from the API call 
      */
     public String sendVoice(
@@ -55,8 +55,8 @@ public class VoiceController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
-     * @param    voiceMessages    Required parameter: Example: 
+     * Send a voice call
+     * @param    voiceMessages    Required parameter: VoiceMessageCollection model
      * @return    Returns the void response from the API call 
      */
     public void sendVoiceAsync(
@@ -78,7 +78,11 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4696062687919717153L;
+=======
+            private static final long serialVersionUID = 5734606257875872366L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -143,7 +147,7 @@ public class VoiceController extends BaseController {
 
     /**
      * Calculate voice price
-     * @param    voiceMessages    Required parameter: Example: 
+     * @param    voiceMessages    Required parameter: VoiceMessageCollection model
      * @return    Returns the String response from the API call 
      */
     public String calculatePrice(
@@ -158,7 +162,7 @@ public class VoiceController extends BaseController {
 
     /**
      * Calculate voice price
-     * @param    voiceMessages    Required parameter: Example: 
+     * @param    voiceMessages    Required parameter: VoiceMessageCollection model
      * @return    Returns the void response from the API call 
      */
     public void calculatePriceAsync(
@@ -180,7 +184,11 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5586708223083793945L;
+=======
+            private static final long serialVersionUID = 5750531444417385321L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -274,117 +282,11 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5683003627284743425L;
-            {
-                    put( "user-agent", "ClickSendSDK" );
-            }
-        };
-
-        //prepare and invoke the API call request to fetch the response
-        final HttpRequest _request = getClientInstance().get(_queryUrl, _headers, null,
-                                        Configuration.username, Configuration.key);
-
-        //invoke the callback before request if its not null
-        if (getHttpCallBack() != null)
-        {
-            getHttpCallBack().OnBeforeRequest(_request);
-        }
-
-        //invoke request and get response
-        Runnable _responseTask = new Runnable() {
-            public void run() {
-                //make the API call
-                getClientInstance().executeAsStringAsync(_request, new APICallBack<HttpResponse>() {
-                    public void onSuccess(HttpContext _context, HttpResponse _response) {
-                        try {
-
-                            //invoke the callback after response if its not null
-                            if (getHttpCallBack() != null)	
-                            {
-                                getHttpCallBack().OnAfterResponse(_context);
-                            }
-
-                            //handle errors defined at the API level
-                            validateResponse(_response, _context);
-
-                            //extract result from the http response
-                            String _result = ((HttpStringResponse)_response).getBody();
-                            //let the caller know of the success
-                            callBack.onSuccess(_context, _result);
-                        } catch (APIException error) {
-                            //let the caller know of the error
-                            callBack.onFailure(_context, error);
-                        } catch (Exception exception) {
-                            //let the caller know of the caught Exception
-                            callBack.onFailure(_context, exception);
-                        }
-                    }
-                    public void onFailure(HttpContext _context, Throwable _error) {
-                        //invoke the callback after response if its not null
-                        if (getHttpCallBack() != null)	
-                            {
-                            getHttpCallBack().OnAfterResponse(_context);
-                        }
-
-                        //let the caller know of the failure
-                        callBack.onFailure(_context, _error);
-                    }
-                });
-            }
-        };
-
-        //execute async using thread pool
-        APIHelper.getScheduler().execute(_responseTask);
-    }
-
-    /**
-     * Get all voice history
-     * @param    dateFrom    Optional parameter: Example: 
-     * @param    dateTo    Optional parameter: Example: 
-     * @return    Returns the String response from the API call 
-     */
-    public String getVoiceHistory(
-                final Integer dateFrom,
-                final Integer dateTo
-    ) throws Throwable {
-        APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
-        getVoiceHistoryAsync(dateFrom, dateTo, callback);
-        if(!callback.isSuccess())
-            throw callback.getError();
-        return callback.getResult();
-    }
-
-    /**
-     * Get all voice history
-     * @param    dateFrom    Optional parameter: Example: 
-     * @param    dateTo    Optional parameter: Example: 
-     * @return    Returns the void response from the API call 
-     */
-    public void getVoiceHistoryAsync(
-                final Integer dateFrom,
-                final Integer dateTo,
-                final APICallBack<String> callBack
-    ) {
-        //the base uri for api requests
-        String _baseUri = Configuration.baseUri;
-        
-        //prepare query string for API call
-        StringBuilder _queryBuilder = new StringBuilder(_baseUri);
-        _queryBuilder.append("/voice/history");
-
-        //process query parameters
-        APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4900807441458479563L;
-            {
-                    put( "date_from", dateFrom );
-                    put( "date_to", dateTo );
-            }});
-        //validate and preprocess url
-        String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
-
-        //load all headers for the outgoing API request
-        Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5261798580764369833L;
+=======
+            private static final long serialVersionUID = 4709433453750579520L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -472,13 +374,29 @@ public class VoiceController extends BaseController {
         
         //prepare query string for API call
         StringBuilder _queryBuilder = new StringBuilder(_baseUri);
+<<<<<<< Updated upstream
+        _queryBuilder.append("/voice/history");
+
+        //process query parameters
+        APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+            private static final long serialVersionUID = 4900807441458479563L;
+            {
+                    put( "date_from", dateFrom );
+                    put( "date_to", dateTo );
+            }});
+=======
         _queryBuilder.append("/voice/receipts");
+>>>>>>> Stashed changes
         //validate and preprocess url
         String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5253407600741584510L;
+<<<<<<< Updated upstream
+            private static final long serialVersionUID = 5261798580764369833L;
+=======
+            private static final long serialVersionUID = 4849171017025975059L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -543,11 +461,11 @@ public class VoiceController extends BaseController {
 
     /**
      * Update voice message status as cancelled
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: Your voice message id
      * @return    Returns the String response from the API call 
      */
     public String cancelVoiceMessage(
-                final int messageId
+                final String messageId
     ) throws Throwable {
         APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
         cancelVoiceMessageAsync(messageId, callback);
@@ -558,13 +476,17 @@ public class VoiceController extends BaseController {
 
     /**
      * Update voice message status as cancelled
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: Your voice message id
      * @return    Returns the void response from the API call 
      */
     public void cancelVoiceMessageAsync(
-                final int messageId,
+                final String messageId,
                 final APICallBack<String> callBack
     ) {
+        //validating required parameters
+        if (null == messageId)
+            throw new NullPointerException("The parameter \"messageId\" is a required parameter and cannot be null.");
+
         //the base uri for api requests
         String _baseUri = Configuration.baseUri;
         
@@ -574,7 +496,7 @@ public class VoiceController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5717340013491081165L;
+            private static final long serialVersionUID = 5029701779344743041L;
             {
                     put( "message_id", messageId );
             }});
@@ -583,7 +505,11 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4809677678142572074L;
+<<<<<<< Updated upstream
+            private static final long serialVersionUID = 5253407600741584510L;
+=======
+            private static final long serialVersionUID = 5143895086791890920L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -671,13 +597,28 @@ public class VoiceController extends BaseController {
         
         //prepare query string for API call
         StringBuilder _queryBuilder = new StringBuilder(_baseUri);
+<<<<<<< Updated upstream
+        _queryBuilder.append("/voice/{message_id}/cancel");
+
+        //process template parameters
+        APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+            private static final long serialVersionUID = 5717340013491081165L;
+            {
+                    put( "message_id", messageId );
+            }});
+=======
         _queryBuilder.append("/voice/cancel-all");
+>>>>>>> Stashed changes
         //validate and preprocess url
         String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5612017689453484180L;
+<<<<<<< Updated upstream
+            private static final long serialVersionUID = 4809677678142572074L;
+=======
+            private static final long serialVersionUID = 5408041404122869729L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -742,7 +683,7 @@ public class VoiceController extends BaseController {
 
     /**
      * Export voice history
-     * @param    filename    Required parameter: Example: 
+     * @param    filename    Required parameter: Filename to export to
      * @return    Returns the String response from the API call 
      */
     public String exportVoiceHistory(
@@ -757,7 +698,7 @@ public class VoiceController extends BaseController {
 
     /**
      * Export voice history
-     * @param    filename    Required parameter: Example: 
+     * @param    filename    Required parameter: Filename to export to
      * @return    Returns the void response from the API call 
      */
     public void exportVoiceHistoryAsync(
@@ -777,7 +718,7 @@ public class VoiceController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4739159592293741179L;
+            private static final long serialVersionUID = 5557465314578123948L;
             {
                     put( "filename", filename );
             }});
@@ -786,7 +727,129 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
+            private static final long serialVersionUID = 5612017689453484180L;
+=======
+            private static final long serialVersionUID = 5394888822583915908L;
+>>>>>>> Stashed changes
+            {
+                    put( "user-agent", "ClickSendSDK" );
+            }
+        };
+
+        //prepare and invoke the API call request to fetch the response
+        final HttpRequest _request = getClientInstance().get(_queryUrl, _headers, null,
+                                        Configuration.username, Configuration.key);
+
+        //invoke the callback before request if its not null
+        if (getHttpCallBack() != null)
+        {
+            getHttpCallBack().OnBeforeRequest(_request);
+        }
+
+        //invoke request and get response
+        Runnable _responseTask = new Runnable() {
+            public void run() {
+                //make the API call
+                getClientInstance().executeAsStringAsync(_request, new APICallBack<HttpResponse>() {
+                    public void onSuccess(HttpContext _context, HttpResponse _response) {
+                        try {
+
+                            //invoke the callback after response if its not null
+                            if (getHttpCallBack() != null)	
+                            {
+                                getHttpCallBack().OnAfterResponse(_context);
+                            }
+
+                            //handle errors defined at the API level
+                            validateResponse(_response, _context);
+
+                            //extract result from the http response
+                            String _result = ((HttpStringResponse)_response).getBody();
+                            //let the caller know of the success
+                            callBack.onSuccess(_context, _result);
+                        } catch (APIException error) {
+                            //let the caller know of the error
+                            callBack.onFailure(_context, error);
+                        } catch (Exception exception) {
+                            //let the caller know of the caught Exception
+                            callBack.onFailure(_context, exception);
+                        }
+                    }
+                    public void onFailure(HttpContext _context, Throwable _error) {
+                        //invoke the callback after response if its not null
+                        if (getHttpCallBack() != null)	
+                            {
+                            getHttpCallBack().OnAfterResponse(_context);
+                        }
+
+                        //let the caller know of the failure
+                        callBack.onFailure(_context, _error);
+                    }
+                });
+            }
+        };
+
+        //execute async using thread pool
+        APIHelper.getScheduler().execute(_responseTask);
+    }
+
+    /**
+     * Get all voice history
+     * @param    dateFrom    Optional parameter: Timestamp (from) used to show records by date.
+     * @param    dateTo    Optional parameter: Timestamp (to) used to show records by date
+     * @return    Returns the String response from the API call 
+     */
+    public String getVoiceHistory(
+                final Integer dateFrom,
+                final Integer dateTo
+    ) throws Throwable {
+        APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
+        getVoiceHistoryAsync(dateFrom, dateTo, callback);
+        if(!callback.isSuccess())
+            throw callback.getError();
+        return callback.getResult();
+    }
+
+    /**
+     * Get all voice history
+     * @param    dateFrom    Optional parameter: Timestamp (from) used to show records by date.
+     * @param    dateTo    Optional parameter: Timestamp (to) used to show records by date
+     * @return    Returns the void response from the API call 
+     */
+    public void getVoiceHistoryAsync(
+                final Integer dateFrom,
+                final Integer dateTo,
+                final APICallBack<String> callBack
+    ) {
+        //the base uri for api requests
+        String _baseUri = Configuration.baseUri;
+        
+        //prepare query string for API call
+        StringBuilder _queryBuilder = new StringBuilder(_baseUri);
+        _queryBuilder.append("/voice/history");
+
+        //process query parameters
+        APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
+            private static final long serialVersionUID = 4739159592293741179L;
+=======
+            private static final long serialVersionUID = 5160596113502456089L;
+>>>>>>> Stashed changes
+            {
+                    put( "date_from", dateFrom );
+                    put( "date_to", dateTo );
+            }});
+        //validate and preprocess url
+        String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
+
+        //load all headers for the outgoing API request
+        Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5053281400773045260L;
+=======
+            private static final long serialVersionUID = 4975973402423849473L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

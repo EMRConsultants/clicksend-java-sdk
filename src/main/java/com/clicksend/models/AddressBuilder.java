@@ -45,7 +45,7 @@ public class AddressBuilder {
     /**
      * Your postal code
      */
-    public AddressBuilder addressPostalCode(int addressPostalCode) {
+    public AddressBuilder addressPostalCode(String addressPostalCode) {
         address.setAddressPostalCode(addressPostalCode);
         return this;
     }

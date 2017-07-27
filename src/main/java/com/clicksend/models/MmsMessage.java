@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class MmsMessage 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5463405434826271566L;
+=======
+    private static final long serialVersionUID = 5190634045193774581L;
+>>>>>>> Stashed changes
     private String to = "0411111111";
     private String body;
     private String subject;

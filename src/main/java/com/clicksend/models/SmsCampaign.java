@@ -11,17 +11,22 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class SmsCampaign 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5709898096582357304L;
     private Object listId;
+=======
+    private static final long serialVersionUID = 4775252844848914393L;
+    private int listId;
+>>>>>>> Stashed changes
     private String name;
     private String body;
-    private String schedule;
     private String from;
+    private Integer schedule = 0;
     /** GETTER
      * Your list id.
      */
     @JsonGetter("list_id")
-    public Object getListId ( ) { 
+    public int getListId ( ) { 
         return this.listId;
     }
     
@@ -29,7 +34,7 @@ public class SmsCampaign
      * Your list id.
      */
     @JsonSetter("list_id")
-    public void setListId (Object value) { 
+    public void setListId (int value) { 
         this.listId = value;
     }
  
@@ -66,22 +71,6 @@ public class SmsCampaign
     }
  
     /** GETTER
-     * Your schedule timestamp.
-     */
-    @JsonGetter("schedule")
-    public String getSchedule ( ) { 
-        return this.schedule;
-    }
-    
-    /** SETTER
-     * Your schedule timestamp.
-     */
-    @JsonSetter("schedule")
-    public void setSchedule (String value) { 
-        this.schedule = value;
-    }
- 
-    /** GETTER
      * Your sender id - more info: http://help.clicksend.com/SMS/what-is-a-sender-id-or-sender-number.
      */
     @JsonGetter("from")
@@ -95,6 +84,22 @@ public class SmsCampaign
     @JsonSetter("from")
     public void setFrom (String value) { 
         this.from = value;
+    }
+ 
+    /** GETTER
+     * Your schedule timestamp.
+     */
+    @JsonGetter("schedule")
+    public Integer getSchedule ( ) { 
+        return this.schedule;
+    }
+    
+    /** SETTER
+     * Your schedule timestamp.
+     */
+    @JsonSetter("schedule")
+    public void setSchedule (Integer value) { 
+        this.schedule = value;
     }
  
 }

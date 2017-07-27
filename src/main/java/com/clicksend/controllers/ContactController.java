@@ -41,7 +41,7 @@ public class ContactController extends BaseController {
 
     /**
      * Create new contact
-     * @param    contact    Required parameter: contact model
+     * @param    contact    Required parameter: Contact model
      * @param    listId    Required parameter: List id
      * @return    Returns the String response from the API call 
      */
@@ -58,7 +58,7 @@ public class ContactController extends BaseController {
 
     /**
      * Create new contact
-     * @param    contact    Required parameter: contact model
+     * @param    contact    Required parameter: Contact model
      * @param    listId    Required parameter: List id
      * @return    Returns the void response from the API call 
      */
@@ -80,7 +80,11 @@ public class ContactController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5096970488780256132L;
+=======
+            private static final long serialVersionUID = 4926677225253308776L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
             }});
@@ -89,7 +93,11 @@ public class ContactController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5514781080851552502L;
+=======
+            private static final long serialVersionUID = 4876496057459727356L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -154,7 +162,7 @@ public class ContactController extends BaseController {
 
     /**
      * Get all contacts in a list
-     * @param    listId    Required parameter: Example: 
+     * @param    listId    Required parameter: Contact list ID
      * @return    Returns the String response from the API call 
      */
     public String getContacts(
@@ -169,7 +177,7 @@ public class ContactController extends BaseController {
 
     /**
      * Get all contacts in a list
-     * @param    listId    Required parameter: Example: 
+     * @param    listId    Required parameter: Contact list ID
      * @return    Returns the void response from the API call 
      */
     public void getContactsAsync(
@@ -185,7 +193,11 @@ public class ContactController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5251779707494361656L;
+=======
+            private static final long serialVersionUID = 5618856846176341601L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
             }});
@@ -194,7 +206,11 @@ public class ContactController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5529141809889554633L;
+=======
+            private static final long serialVersionUID = 5668700020782791274L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -259,9 +275,9 @@ public class ContactController extends BaseController {
 
     /**
      * Update contact
-     * @param    listId    Required parameter: Your list id
-     * @param    contactId    Required parameter: Your contact id
-     * @param    contact    Required parameter: Example: 
+     * @param    listId    Required parameter: Contact list id
+     * @param    contactId    Required parameter: Contact ID
+     * @param    contact    Required parameter: Contact model
      * @return    Returns the String response from the API call 
      */
     public String updateContact(
@@ -278,9 +294,9 @@ public class ContactController extends BaseController {
 
     /**
      * Update contact
-     * @param    listId    Required parameter: Your list id
-     * @param    contactId    Required parameter: Your contact id
-     * @param    contact    Required parameter: Example: 
+     * @param    listId    Required parameter: Contact list id
+     * @param    contactId    Required parameter: Contact ID
+     * @param    contact    Required parameter: Contact model
      * @return    Returns the void response from the API call 
      */
     public void updateContactAsync(
@@ -302,7 +318,11 @@ public class ContactController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5020819492715912081L;
+=======
+            private static final long serialVersionUID = 4995578068607651819L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
                     put( "contact_id", contactId );
@@ -312,7 +332,11 @@ public class ContactController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5079546521936767181L;
+=======
+            private static final long serialVersionUID = 5180455976797852570L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -412,7 +436,11 @@ public class ContactController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5592146053658287583L;
+=======
+            private static final long serialVersionUID = 5573304121785919032L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
                     put( "contact_id", contactId );
@@ -422,7 +450,11 @@ public class ContactController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4759749206302735413L;
+=======
+            private static final long serialVersionUID = 4743792632694781149L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -522,7 +554,11 @@ public class ContactController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5003239939289863066L;
+=======
+            private static final long serialVersionUID = 5690151419161560599L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
                     put( "opt_out_list_id", optOutListId );
@@ -532,7 +568,11 @@ public class ContactController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4902591582551288237L;
+=======
+            private static final long serialVersionUID = 5213167715984413650L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -597,8 +637,8 @@ public class ContactController extends BaseController {
 
     /**
      * Delete a contact
-     * @param    listId    Required parameter: Example: 
-     * @param    contactId    Required parameter: Example: 
+     * @param    listId    Required parameter: List ID
+     * @param    contactId    Required parameter: Contact ID
      * @return    Returns the String response from the API call 
      */
     public String deleteContact(
@@ -614,8 +654,8 @@ public class ContactController extends BaseController {
 
     /**
      * Delete a contact
-     * @param    listId    Required parameter: Example: 
-     * @param    contactId    Required parameter: Example: 
+     * @param    listId    Required parameter: List ID
+     * @param    contactId    Required parameter: Contact ID
      * @return    Returns the void response from the API call 
      */
     public void deleteContactAsync(
@@ -632,7 +672,11 @@ public class ContactController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5319835816200854396L;
+=======
+            private static final long serialVersionUID = 5135635530595683815L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
                     put( "contact_id", contactId );
@@ -642,7 +686,11 @@ public class ContactController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4713856116574965098L;
+=======
+            private static final long serialVersionUID = 4813347817664295613L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

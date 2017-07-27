@@ -70,7 +70,11 @@ public class ContactListController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5325525768320612721L;
+=======
+            private static final long serialVersionUID = 5294479620095190069L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -172,7 +176,11 @@ public class ContactListController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4892772237777566011L;
+=======
+            private static final long serialVersionUID = 4936621608871374095L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -237,7 +245,7 @@ public class ContactListController extends BaseController {
 
     /**
      * Get specific contact list
-     * @param    listId    Required parameter: Example: 
+     * @param    listId    Required parameter: List ID
      * @return    Returns the String response from the API call 
      */
     public String getContactList(
@@ -252,7 +260,7 @@ public class ContactListController extends BaseController {
 
     /**
      * Get specific contact list
-     * @param    listId    Required parameter: Example: 
+     * @param    listId    Required parameter: List ID
      * @return    Returns the void response from the API call 
      */
     public void getContactListAsync(
@@ -268,7 +276,11 @@ public class ContactListController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5563095665990833170L;
+=======
+            private static final long serialVersionUID = 4721721655921259977L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
             }});
@@ -277,7 +289,11 @@ public class ContactListController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5371827320864681239L;
+=======
+            private static final long serialVersionUID = 5038345197820433235L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -342,7 +358,7 @@ public class ContactListController extends BaseController {
 
     /**
      * Delete a specific contact list
-     * @param    listId    Required parameter: Example: 
+     * @param    listId    Required parameter: List ID
      * @return    Returns the String response from the API call 
      */
     public String deleteContactList(
@@ -357,7 +373,7 @@ public class ContactListController extends BaseController {
 
     /**
      * Delete a specific contact list
-     * @param    listId    Required parameter: Example: 
+     * @param    listId    Required parameter: List ID
      * @return    Returns the void response from the API call 
      */
     public void deleteContactListAsync(
@@ -373,7 +389,11 @@ public class ContactListController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5517266086054906417L;
+=======
+            private static final long serialVersionUID = 5600150121075325347L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
             }});
@@ -382,7 +402,11 @@ public class ContactListController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5223525952721257328L;
+=======
+            private static final long serialVersionUID = 4745478622594589935L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -478,7 +502,11 @@ public class ContactListController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5356841629669810685L;
+=======
+            private static final long serialVersionUID = 5497897483090415691L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
             }});
@@ -487,7 +515,11 @@ public class ContactListController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5528455039207103577L;
+=======
+            private static final long serialVersionUID = 5623746464682964815L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -591,7 +623,11 @@ public class ContactListController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5450370699738690836L;
+=======
+            private static final long serialVersionUID = 5720657300981722487L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
             }});
@@ -600,7 +636,11 @@ public class ContactListController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5267206165019799430L;
+=======
+            private static final long serialVersionUID = 5237926093560920185L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -666,7 +706,7 @@ public class ContactListController extends BaseController {
     /**
      * Import contacts to list
      * @param    listId    Required parameter: Your contact list id you want to access.
-     * @param    file    Required parameter: Example: 
+     * @param    file    Required parameter: ContactListImport model
      * @return    Returns the String response from the API call 
      */
     public String importContactsToList(
@@ -683,7 +723,7 @@ public class ContactListController extends BaseController {
     /**
      * Import contacts to list
      * @param    listId    Required parameter: Your contact list id you want to access.
-     * @param    file    Required parameter: Example: 
+     * @param    file    Required parameter: ContactListImport model
      * @return    Returns the void response from the API call 
      */
     public void importContactsToListAsync(
@@ -704,7 +744,11 @@ public class ContactListController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4847899126107907876L;
+=======
+            private static final long serialVersionUID = 4952196483708830180L;
+>>>>>>> Stashed changes
             {
                     put( "list_id", listId );
             }});
@@ -713,7 +757,11 @@ public class ContactListController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4696661682940253970L;
+=======
+            private static final long serialVersionUID = 5301373641673455097L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

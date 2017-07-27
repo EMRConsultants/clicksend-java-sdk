@@ -40,8 +40,13 @@ public class SMSController extends BaseController {
     }
 
     /**
+<<<<<<< Updated upstream
      * TODO: type endpoint description here
      * @param    smsMessages    Required parameter: Array of SmsMessage items
+=======
+     * Send one or more SMS messages
+     * @param    smsMessages    Required parameter: SmsMessageCollection model
+>>>>>>> Stashed changes
      * @return    Returns the String response from the API call 
      */
     public String sendSms(
@@ -55,8 +60,13 @@ public class SMSController extends BaseController {
     }
 
     /**
+<<<<<<< Updated upstream
      * TODO: type endpoint description here
      * @param    smsMessages    Required parameter: Array of SmsMessage items
+=======
+     * Send one or more SMS messages
+     * @param    smsMessages    Required parameter: SmsMessageCollection model
+>>>>>>> Stashed changes
      * @return    Returns the void response from the API call 
      */
     public void sendSmsAsync(
@@ -78,7 +88,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5160163520686631202L;
+=======
+            private static final long serialVersionUID = 5180604142043363300L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -143,7 +157,7 @@ public class SMSController extends BaseController {
 
     /**
      * Calculate sms price
-     * @param    smsMessages    Required parameter: Array of SmsMessage items
+     * @param    smsMessages    Required parameter: SmsMessageCollection model
      * @return    Returns the String response from the API call 
      */
     public String calculatePrice(
@@ -158,7 +172,7 @@ public class SMSController extends BaseController {
 
     /**
      * Calculate sms price
-     * @param    smsMessages    Required parameter: Array of SmsMessage items
+     * @param    smsMessages    Required parameter: SmsMessageCollection model
      * @return    Returns the void response from the API call 
      */
     public void calculatePriceAsync(
@@ -180,7 +194,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5273788049026808286L;
+=======
+            private static final long serialVersionUID = 5247377052489427331L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -244,6 +262,7 @@ public class SMSController extends BaseController {
     }
 
     /**
+<<<<<<< Updated upstream
      * Get all sms history
      * @param    dateFrom    Optional parameter: Start date
      * @param    dateTo    Optional parameter: End date
@@ -354,6 +373,8 @@ public class SMSController extends BaseController {
     }
 
     /**
+=======
+>>>>>>> Stashed changes
      * Export all sms history
      * @param    filename    Required parameter: Example: 
      * @return    Returns the String response from the API call 
@@ -390,7 +411,11 @@ public class SMSController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4896394868287858560L;
+=======
+            private static final long serialVersionUID = 4783906492842147662L;
+>>>>>>> Stashed changes
             {
                     put( "filename", filename );
             }});
@@ -399,7 +424,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4912425458728404927L;
+=======
+            private static final long serialVersionUID = 5627165153560174084L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -501,7 +530,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5436529824787747729L;
+=======
+            private static final long serialVersionUID = 4824601676993967596L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -599,7 +632,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4679416264396543961L;
+=======
+            private static final long serialVersionUID = 4940913102582472639L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -693,7 +730,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5657712234218725995L;
+=======
+            private static final long serialVersionUID = 5718316114700053011L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -795,7 +836,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5147454235918265164L;
+=======
+            private static final long serialVersionUID = 5133480092395450482L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -860,11 +905,11 @@ public class SMSController extends BaseController {
 
     /**
      * Update scheduled message as cancel
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: The message ID you want to cancel
      * @return    Returns the String response from the API call 
      */
     public String cancelScheduledSms(
-                final int messageId
+                final String messageId
     ) throws Throwable {
         APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
         cancelScheduledSmsAsync(messageId, callback);
@@ -875,13 +920,17 @@ public class SMSController extends BaseController {
 
     /**
      * Update scheduled message as cancel
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: The message ID you want to cancel
      * @return    Returns the void response from the API call 
      */
     public void cancelScheduledSmsAsync(
-                final int messageId,
+                final String messageId,
                 final APICallBack<String> callBack
     ) {
+        //validating required parameters
+        if (null == messageId)
+            throw new NullPointerException("The parameter \"messageId\" is a required parameter and cannot be null.");
+
         //the base uri for api requests
         String _baseUri = Configuration.baseUri;
         
@@ -891,7 +940,11 @@ public class SMSController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4760237153860313833L;
+=======
+            private static final long serialVersionUID = 4733714042993289467L;
+>>>>>>> Stashed changes
             {
                     put( "message_id", messageId );
             }});
@@ -900,7 +953,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4975633987571026303L;
+=======
+            private static final long serialVersionUID = 4802010407267277243L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -994,7 +1051,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4667090684367260877L;
+=======
+            private static final long serialVersionUID = 5369871054328405997L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -1059,7 +1120,7 @@ public class SMSController extends BaseController {
 
     /**
      * Create sms template
-     * @param    smsTemplate    Required parameter: Example: 
+     * @param    smsTemplate    Required parameter: SmsTemplate model
      * @return    Returns the String response from the API call 
      */
     public String createSmsTemplate(
@@ -1074,7 +1135,7 @@ public class SMSController extends BaseController {
 
     /**
      * Create sms template
-     * @param    smsTemplate    Required parameter: Example: 
+     * @param    smsTemplate    Required parameter: SmsTemplate model
      * @return    Returns the void response from the API call 
      */
     public void createSmsTemplateAsync(
@@ -1096,7 +1157,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5629807592272616164L;
+=======
+            private static final long serialVersionUID = 5298898729505223898L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -1161,7 +1226,7 @@ public class SMSController extends BaseController {
 
     /**
      * Delete sms template
-     * @param    templateId    Required parameter: Example: 
+     * @param    templateId    Required parameter: Template id
      * @return    Returns the String response from the API call 
      */
     public String deleteSmsTemplate(
@@ -1176,7 +1241,7 @@ public class SMSController extends BaseController {
 
     /**
      * Delete sms template
-     * @param    templateId    Required parameter: Example: 
+     * @param    templateId    Required parameter: Template id
      * @return    Returns the void response from the API call 
      */
     public void deleteSmsTemplateAsync(
@@ -1192,7 +1257,11 @@ public class SMSController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5525211429441454490L;
+=======
+            private static final long serialVersionUID = 5336737481740383560L;
+>>>>>>> Stashed changes
             {
                     put( "template_id", templateId );
             }});
@@ -1201,7 +1270,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5393951391316402037L;
+=======
+            private static final long serialVersionUID = 5356519416218437474L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -1266,12 +1339,12 @@ public class SMSController extends BaseController {
 
     /**
      * Update sms template
-     * @param    templateId    Required parameter: Example: 
-     * @param    smsTemplate    Required parameter: Example: 
+     * @param    templateId    Required parameter: Template id
+     * @param    smsTemplate    Required parameter: Template item
      * @return    Returns the String response from the API call 
      */
     public String updateSmsTemplate(
-                final String templateId,
+                final int templateId,
                 final SmsTemplate smsTemplate
     ) throws Throwable {
         APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
@@ -1283,19 +1356,16 @@ public class SMSController extends BaseController {
 
     /**
      * Update sms template
-     * @param    templateId    Required parameter: Example: 
-     * @param    smsTemplate    Required parameter: Example: 
+     * @param    templateId    Required parameter: Template id
+     * @param    smsTemplate    Required parameter: Template item
      * @return    Returns the void response from the API call 
      */
     public void updateSmsTemplateAsync(
-                final String templateId,
+                final int templateId,
                 final SmsTemplate smsTemplate,
                 final APICallBack<String> callBack
     ) throws JsonProcessingException {
         //validating required parameters
-        if (null == templateId)
-            throw new NullPointerException("The parameter \"templateId\" is a required parameter and cannot be null.");
-
         if (null == smsTemplate)
             throw new NullPointerException("The parameter \"smsTemplate\" is a required parameter and cannot be null.");
 
@@ -1308,7 +1378,11 @@ public class SMSController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4846018029820868454L;
+=======
+            private static final long serialVersionUID = 5368626047194763061L;
+>>>>>>> Stashed changes
             {
                     put( "template_id", templateId );
             }});
@@ -1317,7 +1391,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4858766387002009994L;
+=======
+            private static final long serialVersionUID = 5452633562784319370L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -1411,7 +1489,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4732001285818519393L;
+=======
+            private static final long serialVersionUID = 5456009973955986351L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -1505,7 +1587,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5018733707996779494L;
+=======
+            private static final long serialVersionUID = 5177933168209381656L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -1569,7 +1655,7 @@ public class SMSController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * Mark all inbound SMS as read optionally before a certain date
      * @param    dateBefore    Optional parameter: An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read.
      * @return    Returns the String response from the API call 
      */
@@ -1584,7 +1670,7 @@ public class SMSController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * Mark all inbound SMS as read optionally before a certain date
      * @param    dateBefore    Optional parameter: An optional timestamp - mark all as read before this timestamp. If not given, all messages will be marked as read.
      * @return    Returns the void response from the API call 
      */
@@ -1603,7 +1689,11 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5455987100692560982L;
+=======
+            private static final long serialVersionUID = 5583286362519504886L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -1668,11 +1758,11 @@ public class SMSController extends BaseController {
 
     /**
      * Get a Specific Delivery Receipt
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: Message ID
      * @return    Returns the String response from the API call 
      */
     public String getSpecificDeliveryReceipt(
-                final int messageId
+                final String messageId
     ) throws Throwable {
         APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
         getSpecificDeliveryReceiptAsync(messageId, callback);
@@ -1683,13 +1773,17 @@ public class SMSController extends BaseController {
 
     /**
      * Get a Specific Delivery Receipt
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: Message ID
      * @return    Returns the void response from the API call 
      */
     public void getSpecificDeliveryReceiptAsync(
-                final int messageId,
+                final String messageId,
                 final APICallBack<String> callBack
     ) {
+        //validating required parameters
+        if (null == messageId)
+            throw new NullPointerException("The parameter \"messageId\" is a required parameter and cannot be null.");
+
         //the base uri for api requests
         String _baseUri = Configuration.baseUri;
         
@@ -1699,7 +1793,11 @@ public class SMSController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4976663559206677640L;
+=======
+            private static final long serialVersionUID = 4662877909254367879L;
+>>>>>>> Stashed changes
             {
                     put( "message_id", messageId );
             }});
@@ -1708,7 +1806,121 @@ public class SMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5714443905674868451L;
+=======
+            private static final long serialVersionUID = 4906134185538077355L;
+            {
+                    put( "user-agent", "ClickSendSDK" );
+            }
+        };
+
+        //prepare and invoke the API call request to fetch the response
+        final HttpRequest _request = getClientInstance().get(_queryUrl, _headers, null,
+                                        Configuration.username, Configuration.key);
+
+        //invoke the callback before request if its not null
+        if (getHttpCallBack() != null)
+        {
+            getHttpCallBack().OnBeforeRequest(_request);
+        }
+
+        //invoke request and get response
+        Runnable _responseTask = new Runnable() {
+            public void run() {
+                //make the API call
+                getClientInstance().executeAsStringAsync(_request, new APICallBack<HttpResponse>() {
+                    public void onSuccess(HttpContext _context, HttpResponse _response) {
+                        try {
+
+                            //invoke the callback after response if its not null
+                            if (getHttpCallBack() != null)	
+                            {
+                                getHttpCallBack().OnAfterResponse(_context);
+                            }
+
+                            //handle errors defined at the API level
+                            validateResponse(_response, _context);
+
+                            //extract result from the http response
+                            String _result = ((HttpStringResponse)_response).getBody();
+                            //let the caller know of the success
+                            callBack.onSuccess(_context, _result);
+                        } catch (APIException error) {
+                            //let the caller know of the error
+                            callBack.onFailure(_context, error);
+                        } catch (Exception exception) {
+                            //let the caller know of the caught Exception
+                            callBack.onFailure(_context, exception);
+                        }
+                    }
+                    public void onFailure(HttpContext _context, Throwable _error) {
+                        //invoke the callback after response if its not null
+                        if (getHttpCallBack() != null)	
+                            {
+                            getHttpCallBack().OnAfterResponse(_context);
+                        }
+
+                        //let the caller know of the failure
+                        callBack.onFailure(_context, _error);
+                    }
+                });
+            }
+        };
+
+        //execute async using thread pool
+        APIHelper.getScheduler().execute(_responseTask);
+    }
+
+    /**
+     * Get all sms history
+     * @param    dateFrom    Optional parameter: Start date
+     * @param    dateTo    Optional parameter: End date
+     * @return    Returns the String response from the API call 
+     */
+    public String getSmsHistory(
+                final Integer dateFrom,
+                final Integer dateTo
+    ) throws Throwable {
+        APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
+        getSmsHistoryAsync(dateFrom, dateTo, callback);
+        if(!callback.isSuccess())
+            throw callback.getError();
+        return callback.getResult();
+    }
+
+    /**
+     * Get all sms history
+     * @param    dateFrom    Optional parameter: Start date
+     * @param    dateTo    Optional parameter: End date
+     * @return    Returns the void response from the API call 
+     */
+    public void getSmsHistoryAsync(
+                final Integer dateFrom,
+                final Integer dateTo,
+                final APICallBack<String> callBack
+    ) {
+        //the base uri for api requests
+        String _baseUri = Configuration.baseUri;
+        
+        //prepare query string for API call
+        StringBuilder _queryBuilder = new StringBuilder(_baseUri);
+        _queryBuilder.append("/sms/history");
+
+        //process query parameters
+        APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+            private static final long serialVersionUID = 5220490652894705826L;
+            {
+                    put( "date_from", dateFrom );
+                    put( "date_to", dateTo );
+            }});
+        //validate and preprocess url
+        String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
+
+        //load all headers for the outgoing API request
+        Map<String, String> _headers = new HashMap<String, String>() {
+            private static final long serialVersionUID = 5425288084081321496L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

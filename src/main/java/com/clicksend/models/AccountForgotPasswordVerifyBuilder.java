@@ -18,16 +18,25 @@ public class AccountForgotPasswordVerifyBuilder {
         accountForgotPasswordVerify = new AccountForgotPasswordVerify();
     }
 
+    /**
+     * ID of subaccount
+     */
     public AccountForgotPasswordVerifyBuilder subaccountId(int subaccountId) {
         accountForgotPasswordVerify.setSubaccountId(subaccountId);
         return this;
     }
 
+    /**
+     * Activation token
+     */
     public AccountForgotPasswordVerifyBuilder activationToken(String activationToken) {
         accountForgotPasswordVerify.setActivationToken(activationToken);
         return this;
     }
 
+    /**
+     * Password
+     */
     public AccountForgotPasswordVerifyBuilder password(String password) {
         accountForgotPasswordVerify.setPassword(password);
         return this;

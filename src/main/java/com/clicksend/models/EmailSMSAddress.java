@@ -11,11 +11,15 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class EmailSMSAddress 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5563811240698703421L;
+=======
+    private static final long serialVersionUID = 5089560799688640493L;
+>>>>>>> Stashed changes
     private String emailAddress;
     private String from;
     /** GETTER
-     * TODO: Write general description for this method
+     * Your email address
      */
     @JsonGetter("email_address")
     public String getEmailAddress ( ) { 
@@ -23,7 +27,7 @@ public class EmailSMSAddress
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Your email address
      */
     @JsonSetter("email_address")
     public void setEmailAddress (String value) { 
@@ -31,7 +35,7 @@ public class EmailSMSAddress
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Your sender id
      */
     @JsonGetter("from")
     public String getFrom ( ) { 
@@ -39,7 +43,7 @@ public class EmailSMSAddress
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Your sender id
      */
     @JsonSetter("from")
     public void setFrom (String value) { 

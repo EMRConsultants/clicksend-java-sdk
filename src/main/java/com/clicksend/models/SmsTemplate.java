@@ -11,11 +11,15 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class SmsTemplate 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5306999228719522685L;
+=======
+    private static final long serialVersionUID = 5315187758556711088L;
+>>>>>>> Stashed changes
     private String templateName;
     private String body;
     /** GETTER
-     * TODO: Write general description for this method
+     * Name of template
      */
     @JsonGetter("template_name")
     public String getTemplateName ( ) { 
@@ -23,7 +27,7 @@ public class SmsTemplate
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Name of template
      */
     @JsonSetter("template_name")
     public void setTemplateName (String value) { 
@@ -31,7 +35,7 @@ public class SmsTemplate
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Body of template
      */
     @JsonGetter("body")
     public String getBody ( ) { 
@@ -39,7 +43,7 @@ public class SmsTemplate
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Body of template
      */
     @JsonSetter("body")
     public void setBody (String value) { 

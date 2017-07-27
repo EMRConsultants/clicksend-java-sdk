@@ -69,7 +69,11 @@ public class NumberController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5634658104916740797L;
+=======
+            private static final long serialVersionUID = 5107299025800757671L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -134,7 +138,7 @@ public class NumberController extends BaseController {
 
     /**
      * Buy dedicated number
-     * @param    dedicatedNumber    Required parameter: Example: 
+     * @param    dedicatedNumber    Required parameter: Phone number to purchase
      * @return    Returns the String response from the API call 
      */
     public String purchaseDedicatedNumber(
@@ -149,7 +153,7 @@ public class NumberController extends BaseController {
 
     /**
      * Buy dedicated number
-     * @param    dedicatedNumber    Required parameter: Example: 
+     * @param    dedicatedNumber    Required parameter: Phone number to purchase
      * @return    Returns the void response from the API call 
      */
     public void purchaseDedicatedNumberAsync(
@@ -169,7 +173,11 @@ public class NumberController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5105235550602143804L;
+=======
+            private static final long serialVersionUID = 5173208681211545265L;
+>>>>>>> Stashed changes
             {
                     put( "dedicated_number", dedicatedNumber );
             }});
@@ -178,7 +186,11 @@ public class NumberController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5011009688583067586L;
+=======
+            private static final long serialVersionUID = 4819429535412169270L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -243,7 +255,7 @@ public class NumberController extends BaseController {
 
     /**
      * Get all dedicated numbers by country
-     * @param    country    Required parameter: Example: 
+     * @param    country    Required parameter: Country code to search
      * @param    search    Optional parameter: Your search pattern or query.
      * @param    searchType    Optional parameter: Your strategy for searching, 0 = starts with, 1 = anywhere, 2 = ends with.
      * @return    Returns the String response from the API call 
@@ -262,7 +274,7 @@ public class NumberController extends BaseController {
 
     /**
      * Get all dedicated numbers by country
-     * @param    country    Required parameter: Example: 
+     * @param    country    Required parameter: Country code to search
      * @param    search    Optional parameter: Your search pattern or query.
      * @param    searchType    Optional parameter: Your strategy for searching, 0 = starts with, 1 = anywhere, 2 = ends with.
      * @return    Returns the void response from the API call 
@@ -286,14 +298,22 @@ public class NumberController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5360074099792061274L;
+=======
+            private static final long serialVersionUID = 5309257514790181916L;
+>>>>>>> Stashed changes
             {
                     put( "country", country );
             }});
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4890850188552437768L;
+=======
+            private static final long serialVersionUID = 4710008218622021512L;
+>>>>>>> Stashed changes
             {
                     put( "search", search );
                     put( "search_type", searchType );
@@ -303,7 +323,11 @@ public class NumberController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5354469608181433365L;
+=======
+            private static final long serialVersionUID = 5261848400366510909L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

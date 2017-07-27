@@ -18,11 +18,17 @@ public class EmailSMSAddressBuilder {
         emailSMSAddress = new EmailSMSAddress();
     }
 
+    /**
+     * Your email address
+     */
     public EmailSMSAddressBuilder emailAddress(String emailAddress) {
         emailSMSAddress.setEmailAddress(emailAddress);
         return this;
     }
 
+    /**
+     * Your sender id
+     */
     public EmailSMSAddressBuilder from(String from) {
         emailSMSAddress.setFrom(from);
         return this;

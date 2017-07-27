@@ -18,16 +18,25 @@ public class AccountVerifyBuilder {
         accountVerify = new AccountVerify();
     }
 
+    /**
+     * Country code
+     */
     public AccountVerifyBuilder country(String country) {
         accountVerify.setCountry(country);
         return this;
     }
 
+    /**
+     * User's phone number
+     */
     public AccountVerifyBuilder userPhone(String userPhone) {
         accountVerify.setUserPhone(userPhone);
         return this;
     }
 
+    /**
+     * Type of verification
+     */
     public AccountVerifyBuilder type(String type) {
         accountVerify.setType(type);
         return this;

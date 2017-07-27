@@ -70,7 +70,11 @@ public class SubaccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5360036896671469320L;
+=======
+            private static final long serialVersionUID = 4775802408373449022L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -135,8 +139,8 @@ public class SubaccountController extends BaseController {
 
     /**
      * Update subaccount
-     * @param    subaccountId    Required parameter: Example: 
-     * @param    subaccount    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to update
+     * @param    subaccount    Required parameter: Subaccount model
      * @return    Returns the String response from the API call 
      */
     public String updateSubaccount(
@@ -152,8 +156,8 @@ public class SubaccountController extends BaseController {
 
     /**
      * Update subaccount
-     * @param    subaccountId    Required parameter: Example: 
-     * @param    subaccount    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to update
+     * @param    subaccount    Required parameter: Subaccount model
      * @return    Returns the void response from the API call 
      */
     public void updateSubaccountAsync(
@@ -174,7 +178,11 @@ public class SubaccountController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4746310082988615663L;
+=======
+            private static final long serialVersionUID = 4625782275273754701L;
+>>>>>>> Stashed changes
             {
                     put( "subaccount_id", subaccountId );
             }});
@@ -183,7 +191,11 @@ public class SubaccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5045307615078377500L;
+=======
+            private static final long serialVersionUID = 5604319364666101430L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -248,7 +260,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Get specific subaccount
-     * @param    subaccountId    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to get
      * @return    Returns the String response from the API call 
      */
     public String getSubaccount(
@@ -263,7 +275,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Get specific subaccount
-     * @param    subaccountId    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to get
      * @return    Returns the void response from the API call 
      */
     public void getSubaccountAsync(
@@ -279,7 +291,11 @@ public class SubaccountController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5564546218365403151L;
+=======
+            private static final long serialVersionUID = 5756749821989872066L;
+>>>>>>> Stashed changes
             {
                     put( "subaccount_id", subaccountId );
             }});
@@ -288,7 +304,11 @@ public class SubaccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5393581147877858722L;
+=======
+            private static final long serialVersionUID = 4641122329334304846L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -353,7 +373,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Delete a subaccount
-     * @param    subaccountId    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to delete
      * @return    Returns the String response from the API call 
      */
     public String deleteSubaccount(
@@ -368,7 +388,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Delete a subaccount
-     * @param    subaccountId    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to delete
      * @return    Returns the void response from the API call 
      */
     public void deleteSubaccountAsync(
@@ -384,7 +404,11 @@ public class SubaccountController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5083705370543396626L;
+=======
+            private static final long serialVersionUID = 5378721395611032770L;
+>>>>>>> Stashed changes
             {
                     put( "subaccount_id", subaccountId );
             }});
@@ -393,7 +417,11 @@ public class SubaccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5050535689163032482L;
+=======
+            private static final long serialVersionUID = 4707878107548444927L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -458,7 +486,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Regenerate an API Key
-     * @param    subaccountId    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to regenerate API key for
      * @return    Returns the String response from the API call 
      */
     public String regenerateApiKey(
@@ -473,7 +501,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Regenerate an API Key
-     * @param    subaccountId    Required parameter: Example: 
+     * @param    subaccountId    Required parameter: ID of subaccount to regenerate API key for
      * @return    Returns the void response from the API call 
      */
     public void regenerateApiKeyAsync(
@@ -489,7 +517,11 @@ public class SubaccountController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4743944377266146694L;
+=======
+            private static final long serialVersionUID = 4896784529929190739L;
+>>>>>>> Stashed changes
             {
                     put( "subaccount_id", subaccountId );
             }});
@@ -498,7 +530,11 @@ public class SubaccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5506882227171751808L;
+=======
+            private static final long serialVersionUID = 5177560122804853431L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -563,7 +599,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Create new subaccount
-     * @param    subaccount    Required parameter: Example: 
+     * @param    subaccount    Required parameter: Subaccount model
      * @return    Returns the String response from the API call 
      */
     public String createSubaccount(
@@ -578,7 +614,7 @@ public class SubaccountController extends BaseController {
 
     /**
      * Create new subaccount
-     * @param    subaccount    Required parameter: Example: 
+     * @param    subaccount    Required parameter: Subaccount model
      * @return    Returns the void response from the API call 
      */
     public void createSubaccountAsync(
@@ -600,7 +636,11 @@ public class SubaccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5113250036415450336L;
+=======
+            private static final long serialVersionUID = 4647687918529755785L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
