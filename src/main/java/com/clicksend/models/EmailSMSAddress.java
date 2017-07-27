@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class EmailSMSAddress 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5563811240698703421L;
-=======
     private static final long serialVersionUID = 5089560799688640493L;
->>>>>>> Stashed changes
     private String emailAddress;
     private String from;
     /** GETTER

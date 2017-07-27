@@ -70,11 +70,7 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4937741252737535313L;
-=======
             private static final long serialVersionUID = 5327725423973258535L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -176,11 +172,7 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5126417501440925621L;
-=======
             private static final long serialVersionUID = 5026521860701388788L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -276,11 +268,7 @@ public class AccountRechargeController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5014672264783947741L;
-=======
             private static final long serialVersionUID = 4779594489127976322L;
->>>>>>> Stashed changes
             {
                     put( "country", country );
             }});
@@ -289,11 +277,7 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4847356307403974897L;
-=======
             private static final long serialVersionUID = 5021984767674005334L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -389,11 +373,7 @@ public class AccountRechargeController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5205773206340288051L;
-=======
             private static final long serialVersionUID = 4675229097651843320L;
->>>>>>> Stashed changes
             {
                     put( "package_id", packageId );
             }});
@@ -402,11 +382,7 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5294103915164145026L;
-=======
             private static final long serialVersionUID = 5216320598138324911L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -500,11 +476,7 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5377785526318836109L;
-=======
             private static final long serialVersionUID = 4747598113453355851L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -604,11 +576,7 @@ public class AccountRechargeController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5712951788403904587L;
-=======
             private static final long serialVersionUID = 5267267191581325038L;
->>>>>>> Stashed changes
             {
                     put( "transaction_id", transactionId );
             }});
@@ -617,11 +585,7 @@ public class AccountRechargeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5607817875037751795L;
-=======
             private static final long serialVersionUID = 4847623210660141527L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

@@ -78,11 +78,7 @@ public class PostDirectMailController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5142027045139955704L;
-=======
             private static final long serialVersionUID = 5548357729976962418L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -189,22 +185,14 @@ public class PostDirectMailController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5050917373777609348L;
-=======
             private static final long serialVersionUID = 5433686431274505235L;
->>>>>>> Stashed changes
             {
                     put( "country", country );
             }});
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5429767357659237448L;
-=======
             private static final long serialVersionUID = 5053856193877113884L;
->>>>>>> Stashed changes
             {
                     put( "q", q );
             }});
@@ -213,11 +201,7 @@ public class PostDirectMailController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5030216308341745175L;
-=======
             private static final long serialVersionUID = 5259080456695459331L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -319,11 +303,7 @@ public class PostDirectMailController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5412569984604081963L;
-=======
             private static final long serialVersionUID = 5451485212931712462L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -417,11 +397,7 @@ public class PostDirectMailController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5043811246535713827L;
-=======
             private static final long serialVersionUID = 5428727002626009564L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

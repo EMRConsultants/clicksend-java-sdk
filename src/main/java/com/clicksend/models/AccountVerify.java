@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class AccountVerify 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5755346843599131181L;
-=======
     private static final long serialVersionUID = 4914093786579090608L;
->>>>>>> Stashed changes
     private String country;
     private String userPhone;
     private String type = "sms";

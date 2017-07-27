@@ -80,11 +80,7 @@ public class PostReturnAddressController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4658707761630110388L;
-=======
             private static final long serialVersionUID = 5111648383428752965L;
->>>>>>> Stashed changes
             {
                     put( "return_address_id", returnAddressId );
             }});
@@ -93,11 +89,7 @@ public class PostReturnAddressController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5410620398650524269L;
-=======
             private static final long serialVersionUID = 5414439599174776116L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -199,11 +191,7 @@ public class PostReturnAddressController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4676387005062962583L;
-=======
             private static final long serialVersionUID = 4735058225979714723L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -297,11 +285,7 @@ public class PostReturnAddressController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4652221981847160388L;
-=======
             private static final long serialVersionUID = 5605443626684734425L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -397,11 +381,7 @@ public class PostReturnAddressController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4932241162577760595L;
-=======
             private static final long serialVersionUID = 4642705715160487452L;
->>>>>>> Stashed changes
             {
                     put( "return_address_id", returnAddressId );
             }});
@@ -410,11 +390,7 @@ public class PostReturnAddressController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4858509657795701209L;
-=======
             private static final long serialVersionUID = 4992233548902343427L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -510,11 +486,7 @@ public class PostReturnAddressController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4947966291449371266L;
-=======
             private static final long serialVersionUID = 5191708760387942083L;
->>>>>>> Stashed changes
             {
                     put( "return_address_id", returnAddressId );
             }});
@@ -523,11 +495,7 @@ public class PostReturnAddressController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4813729215768895745L;
-=======
             private static final long serialVersionUID = 4970582998533949482L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

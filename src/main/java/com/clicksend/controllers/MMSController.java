@@ -78,11 +78,7 @@ public class MMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4825043436039078351L;
-=======
             private static final long serialVersionUID = 4954653027245157122L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -184,11 +180,7 @@ public class MMSController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5566796583689531211L;
-=======
             private static final long serialVersionUID = 4913594019484393702L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

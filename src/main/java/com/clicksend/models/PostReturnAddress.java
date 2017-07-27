@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostReturnAddress 
         extends Address {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 4877742936727202278L;
-=======
     private static final long serialVersionUID = 5378512671357324489L;
->>>>>>> Stashed changes
     private Address address;
     /** GETTER
      * Address model

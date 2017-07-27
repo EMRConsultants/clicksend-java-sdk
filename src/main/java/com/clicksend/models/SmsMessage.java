@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class SmsMessage 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5214196214438457571L;
-=======
     private static final long serialVersionUID = 5500918811825822119L;
->>>>>>> Stashed changes
     private String from;
     private String body;
     private String to = "0411111111";

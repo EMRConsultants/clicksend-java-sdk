@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostRecipient 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5648751501069648999L;
-=======
     private static final long serialVersionUID = 5022188904596151000L;
->>>>>>> Stashed changes
     private String addressName;
     private String addressLine1;
     private String addressLine2;

@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class SmsTemplate 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5306999228719522685L;
-=======
     private static final long serialVersionUID = 5315187758556711088L;
->>>>>>> Stashed changes
     private String templateName;
     private String body;
     /** GETTER

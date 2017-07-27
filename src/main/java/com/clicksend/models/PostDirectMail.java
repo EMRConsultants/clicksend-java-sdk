@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostDirectMail 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5064587792041172131L;
-=======
     private static final long serialVersionUID = 5714104246854506432L;
->>>>>>> Stashed changes
     private String name;
     private List<String> fileUrls;
     private String size;

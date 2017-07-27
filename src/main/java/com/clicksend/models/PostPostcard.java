@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostPostcard 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5334988808299178269L;
-=======
     private static final long serialVersionUID = 5012355058526839627L;
->>>>>>> Stashed changes
     private List<String> fileUrls;
     private List<PostRecipient> recipients;
     /** GETTER

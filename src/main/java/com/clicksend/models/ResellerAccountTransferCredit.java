@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class ResellerAccountTransferCredit 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5654090599905097885L;
-=======
     private static final long serialVersionUID = 5144148486319168156L;
->>>>>>> Stashed changes
     private int clientUserId;
     private int balance;
     private String currency;

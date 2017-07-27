@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class ContactListImport 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 4706695473355724546L;
-=======
     private static final long serialVersionUID = 5471675852661609085L;
->>>>>>> Stashed changes
     private String fileUrl;
     private List<String> fieldOrder;
     /** GETTER

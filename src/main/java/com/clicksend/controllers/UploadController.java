@@ -82,11 +82,7 @@ public class UploadController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5297988341579307970L;
-=======
             private static final long serialVersionUID = 5327531123504150783L;
->>>>>>> Stashed changes
             {
                     put( "convert", convert );
             }});
@@ -95,11 +91,7 @@ public class UploadController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4912099506380676156L;
-=======
             private static final long serialVersionUID = 5452375110471311745L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -107,11 +99,7 @@ public class UploadController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4996682006832443503L;
-=======
             private static final long serialVersionUID = 5337269105482968986L;
->>>>>>> Stashed changes
             {
                     put( "file", file );
             }
@@ -218,11 +206,7 @@ public class UploadController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5577591357461080789L;
-=======
             private static final long serialVersionUID = 5156069642354992777L;
->>>>>>> Stashed changes
             {
                     put( "convert", convert );
             }});
@@ -231,11 +215,7 @@ public class UploadController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4717397991610892421L;
-=======
             private static final long serialVersionUID = 5228978070404425310L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

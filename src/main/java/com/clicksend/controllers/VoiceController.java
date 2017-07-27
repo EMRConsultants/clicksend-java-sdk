@@ -78,11 +78,7 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4696062687919717153L;
-=======
             private static final long serialVersionUID = 5734606257875872366L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -184,11 +180,7 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5586708223083793945L;
-=======
             private static final long serialVersionUID = 5750531444417385321L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -282,11 +274,7 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5683003627284743425L;
-=======
             private static final long serialVersionUID = 4709433453750579520L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -374,29 +362,13 @@ public class VoiceController extends BaseController {
         
         //prepare query string for API call
         StringBuilder _queryBuilder = new StringBuilder(_baseUri);
-<<<<<<< Updated upstream
-        _queryBuilder.append("/voice/history");
-
-        //process query parameters
-        APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4900807441458479563L;
-            {
-                    put( "date_from", dateFrom );
-                    put( "date_to", dateTo );
-            }});
-=======
         _queryBuilder.append("/voice/receipts");
->>>>>>> Stashed changes
         //validate and preprocess url
         String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5261798580764369833L;
-=======
             private static final long serialVersionUID = 4849171017025975059L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -505,11 +477,7 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5253407600741584510L;
-=======
             private static final long serialVersionUID = 5143895086791890920L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -597,28 +565,13 @@ public class VoiceController extends BaseController {
         
         //prepare query string for API call
         StringBuilder _queryBuilder = new StringBuilder(_baseUri);
-<<<<<<< Updated upstream
-        _queryBuilder.append("/voice/{message_id}/cancel");
-
-        //process template parameters
-        APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5717340013491081165L;
-            {
-                    put( "message_id", messageId );
-            }});
-=======
         _queryBuilder.append("/voice/cancel-all");
->>>>>>> Stashed changes
         //validate and preprocess url
         String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4809677678142572074L;
-=======
             private static final long serialVersionUID = 5408041404122869729L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -727,11 +680,7 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5612017689453484180L;
-=======
             private static final long serialVersionUID = 5394888822583915908L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -831,11 +780,7 @@ public class VoiceController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4739159592293741179L;
-=======
             private static final long serialVersionUID = 5160596113502456089L;
->>>>>>> Stashed changes
             {
                     put( "date_from", dateFrom );
                     put( "date_to", dateTo );
@@ -845,11 +790,7 @@ public class VoiceController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5053281400773045260L;
-=======
             private static final long serialVersionUID = 4975973402423849473L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

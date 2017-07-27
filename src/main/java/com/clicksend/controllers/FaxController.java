@@ -41,7 +41,7 @@ public class FaxController extends BaseController {
 
     /**
      * Get a single fax receipt based on message id.
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: ID of the message receipt to retrieve
      * @return    Returns the String response from the API call 
      */
     public String getFaxReceipt(
@@ -56,7 +56,7 @@ public class FaxController extends BaseController {
 
     /**
      * Get a single fax receipt based on message id.
-     * @param    messageId    Required parameter: Example: 
+     * @param    messageId    Required parameter: ID of the message receipt to retrieve
      * @return    Returns the void response from the API call 
      */
     public void getFaxReceiptAsync(
@@ -76,11 +76,7 @@ public class FaxController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4814922191668868628L;
-=======
             private static final long serialVersionUID = 5070569976535799224L;
->>>>>>> Stashed changes
             {
                     put( "message_id", messageId );
             }});
@@ -89,11 +85,7 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4773639694841330841L;
-=======
             private static final long serialVersionUID = 4923921051598671228L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -201,11 +193,7 @@ public class FaxController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5703991492340029605L;
-=======
             private static final long serialVersionUID = 4869962907890386336L;
->>>>>>> Stashed changes
             {
                     put( "date_from", dateFrom );
                     put( "date_to", dateTo );
@@ -217,11 +205,7 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5090081213848568188L;
-=======
             private static final long serialVersionUID = 5567524643139355654L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -315,11 +299,7 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5674736732974363097L;
-=======
             private static final long serialVersionUID = 5595232298883438269L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -421,11 +401,7 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5474082417836783623L;
-=======
             private static final long serialVersionUID = 5243366856630875609L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -527,11 +503,7 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5063789400121093878L;
-=======
             private static final long serialVersionUID = 5328255338048313930L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

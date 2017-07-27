@@ -40,13 +40,8 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-<<<<<<< Updated upstream
-     * TODO: type endpoint description here
-     * @param    postPostcards    Required parameter: Example: 
-=======
      * Calculate price for sending one or more postcards
      * @param    postPostcards    Required parameter: PostPostcard model
->>>>>>> Stashed changes
      * @return    Returns the String response from the API call 
      */
     public String calculatePrice(
@@ -60,13 +55,8 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-<<<<<<< Updated upstream
-     * TODO: type endpoint description here
-     * @param    postPostcards    Required parameter: Example: 
-=======
      * Calculate price for sending one or more postcards
      * @param    postPostcards    Required parameter: PostPostcard model
->>>>>>> Stashed changes
      * @return    Returns the void response from the API call 
      */
     public void calculatePriceAsync(
@@ -88,11 +78,7 @@ public class PostPostcardController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5570988246661749318L;
-=======
             private static final long serialVersionUID = 5585285722051090356L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -156,13 +142,8 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-<<<<<<< Updated upstream
-     * TODO: type endpoint description here
-     * @param    postPostcards    Required parameter: Example: 
-=======
      * Send one or more postcards
      * @param    postPostcards    Required parameter: PostPostcard model
->>>>>>> Stashed changes
      * @return    Returns the String response from the API call 
      */
     public String sendPostcard(
@@ -176,13 +157,8 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-<<<<<<< Updated upstream
-     * TODO: type endpoint description here
-     * @param    postPostcards    Required parameter: Example: 
-=======
      * Send one or more postcards
      * @param    postPostcards    Required parameter: PostPostcard model
->>>>>>> Stashed changes
      * @return    Returns the void response from the API call 
      */
     public void sendPostcardAsync(
@@ -204,11 +180,7 @@ public class PostPostcardController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5476705524800040110L;
-=======
             private static final long serialVersionUID = 4788375833923286032L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -272,7 +244,7 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * Retrieve the history of postcards sent or scheduled
      * @return    Returns the String response from the API call 
      */
     public String getPostcardHistory(
@@ -285,7 +257,7 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * Retrieve the history of postcards sent or scheduled
      * @return    Returns the void response from the API call 
      */
     public void getPostcardHistoryAsync(
@@ -302,11 +274,7 @@ public class PostPostcardController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5673390590395978572L;
-=======
             private static final long serialVersionUID = 5191422934970801321L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -370,7 +338,7 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * Export postcard history to a CSV file
      * @param    filename    Required parameter: Filename to export to
      * @return    Returns the String response from the API call 
      */
@@ -385,7 +353,7 @@ public class PostPostcardController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * Export postcard history to a CSV file
      * @param    filename    Required parameter: Filename to export to
      * @return    Returns the void response from the API call 
      */
@@ -406,11 +374,7 @@ public class PostPostcardController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5538763387842263056L;
-=======
             private static final long serialVersionUID = 5562531427799068864L;
->>>>>>> Stashed changes
             {
                     put( "filename", filename );
             }});
@@ -419,11 +383,7 @@ public class PostPostcardController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5314779697766459932L;
-=======
             private static final long serialVersionUID = 5092888163241700774L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

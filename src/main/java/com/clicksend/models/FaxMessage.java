@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class FaxMessage 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5679878229012350371L;
-=======
     private static final long serialVersionUID = 5265375816337060019L;
->>>>>>> Stashed changes
     private String source;
     private String to;
     private Integer listId;

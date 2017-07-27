@@ -78,11 +78,7 @@ public class PostLetterController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5436962687091619057L;
-=======
             private static final long serialVersionUID = 5061675548284807399L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -184,11 +180,7 @@ public class PostLetterController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5126703526740961706L;
-=======
             private static final long serialVersionUID = 5401806610610564187L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -282,11 +274,7 @@ public class PostLetterController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5630344111049731051L;
-=======
             private static final long serialVersionUID = 5676374529592566556L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -386,11 +374,7 @@ public class PostLetterController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5585065601929313930L;
-=======
             private static final long serialVersionUID = 5713594444128537839L;
->>>>>>> Stashed changes
             {
                     put( "filename", filename );
             }});
@@ -399,11 +383,7 @@ public class PostLetterController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 5682515031562760704L;
-=======
             private static final long serialVersionUID = 4938778831814416100L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

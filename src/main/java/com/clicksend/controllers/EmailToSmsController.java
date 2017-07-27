@@ -78,11 +78,7 @@ public class EmailToSmsController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4756800478230548136L;
-=======
             private static final long serialVersionUID = 4873785632726011033L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -176,11 +172,7 @@ public class EmailToSmsController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4716067371328461730L;
-=======
             private static final long serialVersionUID = 4966235671886114901L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

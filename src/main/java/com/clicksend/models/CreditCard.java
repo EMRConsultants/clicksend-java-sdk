@@ -11,13 +11,8 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class CreditCard 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 4842467889130663584L;
-    private int number;
-=======
     private static final long serialVersionUID = 5361358991406601801L;
     private String number;
->>>>>>> Stashed changes
     private int expiryMonth;
     private int expiryYear;
     private int cvc;

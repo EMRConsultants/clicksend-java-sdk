@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostLetter 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 4843585335817425906L;
-=======
     private static final long serialVersionUID = 5583637303720249939L;
->>>>>>> Stashed changes
     private String fileUrl;
     private List<PostRecipient> recipients;
     private Boolean templateUsed = false;

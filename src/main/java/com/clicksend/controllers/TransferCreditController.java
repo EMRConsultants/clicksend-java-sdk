@@ -78,11 +78,7 @@ public class TransferCreditController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4687547126279140412L;
-=======
             private static final long serialVersionUID = 4653178828056772672L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

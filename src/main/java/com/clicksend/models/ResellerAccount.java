@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class ResellerAccount 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 4925983241237751006L;
-=======
     private static final long serialVersionUID = 4730043902335360756L;
->>>>>>> Stashed changes
     private String username;
     private String password;
     private String userEmail;

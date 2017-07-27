@@ -69,11 +69,7 @@ public class ReferralAccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-<<<<<<< Updated upstream
-            private static final long serialVersionUID = 4643535967807821619L;
-=======
             private static final long serialVersionUID = 4764469263433981108L;
->>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

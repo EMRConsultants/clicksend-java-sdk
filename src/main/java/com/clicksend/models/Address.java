@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Address 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5144748350052420853L;
-=======
     private static final long serialVersionUID = 5152840820218445858L;
->>>>>>> Stashed changes
     private String addressName;
     private String addressLine1;
     private String addressCity;

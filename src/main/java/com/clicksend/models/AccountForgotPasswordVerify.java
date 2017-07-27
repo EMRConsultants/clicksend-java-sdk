@@ -11,11 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class AccountForgotPasswordVerify 
         implements java.io.Serializable {
-<<<<<<< Updated upstream
-    private static final long serialVersionUID = 5104056279642505889L;
-=======
     private static final long serialVersionUID = 5071605556590116303L;
->>>>>>> Stashed changes
     private int subaccountId;
     private String activationToken;
     private String password;
