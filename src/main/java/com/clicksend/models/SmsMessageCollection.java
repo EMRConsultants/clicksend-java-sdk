@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class SmsMessageCollection 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5292340211568551859L;
+=======
+    private static final long serialVersionUID = 5667613380548138530L;
+>>>>>>> Stashed changes
     private List<SmsMessage> messages;
     /** GETTER
      * Array of SmsMessage items

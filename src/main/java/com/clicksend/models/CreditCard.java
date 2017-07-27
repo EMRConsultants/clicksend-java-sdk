@@ -11,30 +11,35 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class CreditCard 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 4842467889130663584L;
     private int number;
+=======
+    private static final long serialVersionUID = 5361358991406601801L;
+    private String number;
+>>>>>>> Stashed changes
     private int expiryMonth;
     private int expiryYear;
     private int cvc;
     private String name;
     /** GETTER
-     * TODO: Write general description for this method
+     * Credit card number
      */
     @JsonGetter("number")
-    public int getNumber ( ) { 
+    public String getNumber ( ) { 
         return this.number;
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Credit card number
      */
     @JsonSetter("number")
-    public void setNumber (int value) { 
+    public void setNumber (String value) { 
         this.number = value;
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Expiry month of credit card
      */
     @JsonGetter("expiry_month")
     public int getExpiryMonth ( ) { 
@@ -42,7 +47,7 @@ public class CreditCard
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Expiry month of credit card
      */
     @JsonSetter("expiry_month")
     public void setExpiryMonth (int value) { 
@@ -50,7 +55,7 @@ public class CreditCard
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Expiry year of credit card
      */
     @JsonGetter("expiry_year")
     public int getExpiryYear ( ) { 
@@ -58,7 +63,7 @@ public class CreditCard
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Expiry year of credit card
      */
     @JsonSetter("expiry_year")
     public void setExpiryYear (int value) { 
@@ -66,7 +71,7 @@ public class CreditCard
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * CVC number of credit card
      */
     @JsonGetter("cvc")
     public int getCvc ( ) { 
@@ -74,7 +79,7 @@ public class CreditCard
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * CVC number of credit card
      */
     @JsonSetter("cvc")
     public void setCvc (int value) { 
@@ -82,7 +87,7 @@ public class CreditCard
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Name printed on credit card
      */
     @JsonGetter("name")
     public String getName ( ) { 
@@ -90,7 +95,7 @@ public class CreditCard
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Name printed on credit card
      */
     @JsonSetter("name")
     public void setName (String value) { 

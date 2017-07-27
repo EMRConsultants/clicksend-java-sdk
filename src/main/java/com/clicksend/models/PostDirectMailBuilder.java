@@ -42,6 +42,9 @@ public class PostDirectMailBuilder {
         return this;
     }
 
+    /**
+     * PostDirectMailArea model
+     */
     public PostDirectMailBuilder areas(List<PostDirectMailArea> areas) {
         postDirectMail.setAreas(areas);
         return this;

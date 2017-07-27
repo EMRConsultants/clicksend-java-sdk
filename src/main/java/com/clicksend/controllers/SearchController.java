@@ -75,7 +75,11 @@ public class SearchController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4902961216872553796L;
+=======
+            private static final long serialVersionUID = 4791921576928069629L;
+>>>>>>> Stashed changes
             {
                     put( "q", q );
             }});
@@ -84,7 +88,11 @@ public class SearchController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4770285272309153725L;
+=======
+            private static final long serialVersionUID = 4800117307991106588L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

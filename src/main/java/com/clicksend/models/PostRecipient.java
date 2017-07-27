@@ -11,18 +11,22 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PostRecipient 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5648751501069648999L;
+=======
+    private static final long serialVersionUID = 5022188904596151000L;
+>>>>>>> Stashed changes
     private String addressName;
     private String addressLine1;
     private String addressLine2;
     private String addressCity;
     private String addressState;
-    private int addressPostalCode;
+    private String addressPostalCode;
     private String addressCountry;
     private int returnAddressId;
     private Integer schedule = 0;
     /** GETTER
-     * TODO: Write general description for this method
+     * Name of address
      */
     @JsonGetter("address_name")
     public String getAddressName ( ) { 
@@ -30,7 +34,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Name of address
      */
     @JsonSetter("address_name")
     public void setAddressName (String value) { 
@@ -38,7 +42,7 @@ public class PostRecipient
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * First line of address
      */
     @JsonGetter("address_line_1")
     public String getAddressLine1 ( ) { 
@@ -46,7 +50,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * First line of address
      */
     @JsonSetter("address_line_1")
     public void setAddressLine1 (String value) { 
@@ -54,7 +58,7 @@ public class PostRecipient
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Second line of address
      */
     @JsonGetter("address_line_2")
     public String getAddressLine2 ( ) { 
@@ -62,7 +66,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Second line of address
      */
     @JsonSetter("address_line_2")
     public void setAddressLine2 (String value) { 
@@ -70,7 +74,7 @@ public class PostRecipient
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * City
      */
     @JsonGetter("address_city")
     public String getAddressCity ( ) { 
@@ -78,7 +82,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * City
      */
     @JsonSetter("address_city")
     public void setAddressCity (String value) { 
@@ -86,7 +90,7 @@ public class PostRecipient
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * State
      */
     @JsonGetter("address_state")
     public String getAddressState ( ) { 
@@ -94,7 +98,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * State
      */
     @JsonSetter("address_state")
     public void setAddressState (String value) { 
@@ -102,23 +106,23 @@ public class PostRecipient
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Postal code
      */
     @JsonGetter("address_postal_code")
-    public int getAddressPostalCode ( ) { 
+    public String getAddressPostalCode ( ) { 
         return this.addressPostalCode;
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Postal code
      */
     @JsonSetter("address_postal_code")
-    public void setAddressPostalCode (int value) { 
+    public void setAddressPostalCode (String value) { 
         this.addressPostalCode = value;
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Country
      */
     @JsonGetter("address_country")
     public String getAddressCountry ( ) { 
@@ -126,7 +130,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Country
      */
     @JsonSetter("address_country")
     public void setAddressCountry (String value) { 
@@ -134,7 +138,7 @@ public class PostRecipient
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * ID of return address to use
      */
     @JsonGetter("return_address_id")
     public int getReturnAddressId ( ) { 
@@ -142,7 +146,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * ID of return address to use
      */
     @JsonSetter("return_address_id")
     public void setReturnAddressId (int value) { 
@@ -150,7 +154,7 @@ public class PostRecipient
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * When to send letter (0/null=now)
      */
     @JsonGetter("schedule")
     public Integer getSchedule ( ) { 
@@ -158,7 +162,7 @@ public class PostRecipient
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * When to send letter (0/null=now)
      */
     @JsonSetter("schedule")
     public void setSchedule (Integer value) { 

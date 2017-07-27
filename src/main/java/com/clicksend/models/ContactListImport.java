@@ -11,11 +11,15 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class ContactListImport 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 4706695473355724546L;
+=======
+    private static final long serialVersionUID = 5471675852661609085L;
+>>>>>>> Stashed changes
     private String fileUrl;
     private List<String> fieldOrder;
     /** GETTER
-     * TODO: Write general description for this method
+     * URL of file to process
      */
     @JsonGetter("file_url")
     public String getFileUrl ( ) { 
@@ -23,7 +27,7 @@ public class ContactListImport
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * URL of file to process
      */
     @JsonSetter("file_url")
     public void setFileUrl (String value) { 
@@ -31,7 +35,7 @@ public class ContactListImport
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Order of fields in file
      */
     @JsonGetter("field_order")
     public List<String> getFieldOrder ( ) { 
@@ -39,7 +43,7 @@ public class ContactListImport
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Order of fields in file
      */
     @JsonSetter("field_order")
     public void setFieldOrder (List<String> value) { 

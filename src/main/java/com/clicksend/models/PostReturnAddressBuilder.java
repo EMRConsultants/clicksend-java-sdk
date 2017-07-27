@@ -19,6 +19,9 @@ public class PostReturnAddressBuilder
         postReturnAddress = new PostReturnAddress();
     }
 
+    /**
+     * Address model
+     */
     public PostReturnAddressBuilder address(Address address) {
         postReturnAddress.setAddress(address);
         return this;

@@ -45,7 +45,7 @@ public class FaxController extends BaseController {
      * @return    Returns the String response from the API call 
      */
     public String getFaxReceipt(
-                final int messageId
+                final String messageId
     ) throws Throwable {
         APICallBackCatcher<String> callback = new APICallBackCatcher<String>();
         getFaxReceiptAsync(messageId, callback);
@@ -60,9 +60,13 @@ public class FaxController extends BaseController {
      * @return    Returns the void response from the API call 
      */
     public void getFaxReceiptAsync(
-                final int messageId,
+                final String messageId,
                 final APICallBack<String> callBack
     ) {
+        //validating required parameters
+        if (null == messageId)
+            throw new NullPointerException("The parameter \"messageId\" is a required parameter and cannot be null.");
+
         //the base uri for api requests
         String _baseUri = Configuration.baseUri;
         
@@ -72,7 +76,11 @@ public class FaxController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4814922191668868628L;
+=======
+            private static final long serialVersionUID = 5070569976535799224L;
+>>>>>>> Stashed changes
             {
                     put( "message_id", messageId );
             }});
@@ -81,7 +89,11 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4773639694841330841L;
+=======
+            private static final long serialVersionUID = 4923921051598671228L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -146,15 +158,15 @@ public class FaxController extends BaseController {
 
     /**
      * Get a list of Fax History.
-     * @param    dateFrom    Required parameter: Customize result by setting from date (timestsamp) Example: 1457572619.
-     * @param    dateTo    Required parameter: Customize result by setting to date (timestamp) Example: 1457573000.
-     * @param    q    Required parameter: Custom query Example: status:Sent,status_code:201.
-     * @param    order    Required parameter: Order result by Example: date_added:desc,list_id:desc.
+     * @param    dateFrom    Optional parameter: Customize result by setting from date (timestsamp) Example: 1457572619.
+     * @param    dateTo    Optional parameter: Customize result by setting to date (timestamp) Example: 1457573000.
+     * @param    q    Optional parameter: Custom query Example: status:Sent,status_code:201.
+     * @param    order    Optional parameter: Order result by Example: date_added:desc,list_id:desc.
      * @return    Returns the String response from the API call 
      */
     public String getFaxHistory(
-                final int dateFrom,
-                final int dateTo,
+                final Integer dateFrom,
+                final Integer dateTo,
                 final String q,
                 final String order
     ) throws Throwable {
@@ -167,26 +179,19 @@ public class FaxController extends BaseController {
 
     /**
      * Get a list of Fax History.
-     * @param    dateFrom    Required parameter: Customize result by setting from date (timestsamp) Example: 1457572619.
-     * @param    dateTo    Required parameter: Customize result by setting to date (timestamp) Example: 1457573000.
-     * @param    q    Required parameter: Custom query Example: status:Sent,status_code:201.
-     * @param    order    Required parameter: Order result by Example: date_added:desc,list_id:desc.
+     * @param    dateFrom    Optional parameter: Customize result by setting from date (timestsamp) Example: 1457572619.
+     * @param    dateTo    Optional parameter: Customize result by setting to date (timestamp) Example: 1457573000.
+     * @param    q    Optional parameter: Custom query Example: status:Sent,status_code:201.
+     * @param    order    Optional parameter: Order result by Example: date_added:desc,list_id:desc.
      * @return    Returns the void response from the API call 
      */
     public void getFaxHistoryAsync(
-                final int dateFrom,
-                final int dateTo,
+                final Integer dateFrom,
+                final Integer dateTo,
                 final String q,
                 final String order,
                 final APICallBack<String> callBack
     ) {
-        //validating required parameters
-        if (null == q)
-            throw new NullPointerException("The parameter \"q\" is a required parameter and cannot be null.");
-
-        if (null == order)
-            throw new NullPointerException("The parameter \"order\" is a required parameter and cannot be null.");
-
         //the base uri for api requests
         String _baseUri = Configuration.baseUri;
         
@@ -196,7 +201,11 @@ public class FaxController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5703991492340029605L;
+=======
+            private static final long serialVersionUID = 4869962907890386336L;
+>>>>>>> Stashed changes
             {
                     put( "date_from", dateFrom );
                     put( "date_to", dateTo );
@@ -208,7 +217,11 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5090081213848568188L;
+=======
+            private static final long serialVersionUID = 5567524643139355654L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -302,7 +315,11 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5674736732974363097L;
+=======
+            private static final long serialVersionUID = 5595232298883438269L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -367,7 +384,7 @@ public class FaxController extends BaseController {
 
     /**
      * Calculate Total Price for Fax Messages sent
-     * @param    faxMessage    Required parameter: Example: 
+     * @param    faxMessage    Required parameter: FaxMessageCollection model
      * @return    Returns the String response from the API call 
      */
     public String calculatePrice(
@@ -382,7 +399,7 @@ public class FaxController extends BaseController {
 
     /**
      * Calculate Total Price for Fax Messages sent
-     * @param    faxMessage    Required parameter: Example: 
+     * @param    faxMessage    Required parameter: FaxMessageCollection model
      * @return    Returns the void response from the API call 
      */
     public void calculatePriceAsync(
@@ -404,7 +421,11 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5474082417836783623L;
+=======
+            private static final long serialVersionUID = 5243366856630875609L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -469,7 +490,7 @@ public class FaxController extends BaseController {
 
     /**
      * Send a fax using supplied supported file-types.
-     * @param    faxMessage    Required parameter: Example: 
+     * @param    faxMessage    Required parameter: FaxMessageCollection model
      * @return    Returns the String response from the API call 
      */
     public String sendFax(
@@ -484,7 +505,7 @@ public class FaxController extends BaseController {
 
     /**
      * Send a fax using supplied supported file-types.
-     * @param    faxMessage    Required parameter: Example: 
+     * @param    faxMessage    Required parameter: FaxMessageCollection model
      * @return    Returns the void response from the API call 
      */
     public void sendFaxAsync(
@@ -506,7 +527,11 @@ public class FaxController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5063789400121093878L;
+=======
+            private static final long serialVersionUID = 5328255338048313930L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

@@ -11,12 +11,16 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class ResellerAccountTransferCredit 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5654090599905097885L;
+=======
+    private static final long serialVersionUID = 5144148486319168156L;
+>>>>>>> Stashed changes
     private int clientUserId;
     private int balance;
     private String currency;
     /** GETTER
-     * TODO: Write general description for this method
+     * User ID of client
      */
     @JsonGetter("client_user_id")
     public int getClientUserId ( ) { 
@@ -24,7 +28,7 @@ public class ResellerAccountTransferCredit
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * User ID of client
      */
     @JsonSetter("client_user_id")
     public void setClientUserId (int value) { 
@@ -32,7 +36,7 @@ public class ResellerAccountTransferCredit
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Balance to transfer
      */
     @JsonGetter("balance")
     public int getBalance ( ) { 
@@ -40,7 +44,7 @@ public class ResellerAccountTransferCredit
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Balance to transfer
      */
     @JsonSetter("balance")
     public void setBalance (int value) { 
@@ -48,7 +52,7 @@ public class ResellerAccountTransferCredit
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * Currency of balance to transfer
      */
     @JsonGetter("currency")
     public String getCurrency ( ) { 
@@ -56,7 +60,7 @@ public class ResellerAccountTransferCredit
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * Currency of balance to transfer
      */
     @JsonSetter("currency")
     public void setCurrency (String value) { 

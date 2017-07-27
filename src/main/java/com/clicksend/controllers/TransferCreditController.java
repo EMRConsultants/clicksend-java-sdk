@@ -41,7 +41,7 @@ public class TransferCreditController extends BaseController {
 
     /**
      * Transfer Credit
-     * @param    resellerAccountTransferCredit    Required parameter: Example: 
+     * @param    resellerAccountTransferCredit    Required parameter: ResellerAccountTransferCredit model
      * @return    Returns the String response from the API call 
      */
     public String transferCredit(
@@ -56,7 +56,7 @@ public class TransferCreditController extends BaseController {
 
     /**
      * Transfer Credit
-     * @param    resellerAccountTransferCredit    Required parameter: Example: 
+     * @param    resellerAccountTransferCredit    Required parameter: ResellerAccountTransferCredit model
      * @return    Returns the void response from the API call 
      */
     public void transferCreditAsync(
@@ -78,7 +78,11 @@ public class TransferCreditController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4687547126279140412L;
+=======
+            private static final long serialVersionUID = 4653178828056772672L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

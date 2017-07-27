@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Contact 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 4681277628664985831L;
+=======
+    private static final long serialVersionUID = 5627512800221241368L;
+>>>>>>> Stashed changes
     private String phoneNumber;
     private String custom1;
     private String email;

@@ -11,7 +11,11 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Account 
         implements java.io.Serializable {
+<<<<<<< Updated upstream
     private static final long serialVersionUID = 5195842874106355011L;
+=======
+    private static final long serialVersionUID = 5256451365464785946L;
+>>>>>>> Stashed changes
     private String username;
     private String password;
     private String userPhone;

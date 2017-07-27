@@ -41,7 +41,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Create sms campaign
-     * @param    campaign    Required parameter: Example: 
+     * @param    campaign    Required parameter: SmsCampaign model
      * @return    Returns the String response from the API call 
      */
     public String createSmsCampaign(
@@ -56,7 +56,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Create sms campaign
-     * @param    campaign    Required parameter: Example: 
+     * @param    campaign    Required parameter: SmsCampaign model
      * @return    Returns the void response from the API call 
      */
     public void createSmsCampaignAsync(
@@ -78,7 +78,11 @@ public class SmsCampaignController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4644973112322275433L;
+=======
+            private static final long serialVersionUID = 5445784840845211708L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -143,7 +147,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Calculate price for sms campaign
-     * @param    campaign    Required parameter: Example: 
+     * @param    campaign    Required parameter: SmsCampaign model
      * @return    Returns the String response from the API call 
      */
     public String calculatePrice(
@@ -158,7 +162,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Calculate price for sms campaign
-     * @param    campaign    Required parameter: Example: 
+     * @param    campaign    Required parameter: SmsCampaign model
      * @return    Returns the void response from the API call 
      */
     public void calculatePriceAsync(
@@ -180,7 +184,11 @@ public class SmsCampaignController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4950824245262084070L;
+=======
+            private static final long serialVersionUID = 4670090990384637742L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -245,8 +253,8 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Update sms campaign
-     * @param    smsCampaignId    Required parameter: Example: 
-     * @param    campaign    Required parameter: Example: 
+     * @param    smsCampaignId    Required parameter: ID of SMS campaign to update
+     * @param    campaign    Required parameter: SmsCampaign model
      * @return    Returns the String response from the API call 
      */
     public String updateSmsCampaign(
@@ -262,8 +270,8 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Update sms campaign
-     * @param    smsCampaignId    Required parameter: Example: 
-     * @param    campaign    Required parameter: Example: 
+     * @param    smsCampaignId    Required parameter: ID of SMS campaign to update
+     * @param    campaign    Required parameter: SmsCampaign model
      * @return    Returns the void response from the API call 
      */
     public void updateSmsCampaignAsync(
@@ -284,7 +292,11 @@ public class SmsCampaignController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4621998532381502435L;
+=======
+            private static final long serialVersionUID = 4658683715277494347L;
+>>>>>>> Stashed changes
             {
                     put( "sms_campaign_id", smsCampaignId );
             }});
@@ -293,7 +305,11 @@ public class SmsCampaignController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5115349152542971507L;
+=======
+            private static final long serialVersionUID = 5223385048723237037L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -358,7 +374,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Cancel sms campaign
-     * @param    smsCampaignId    Required parameter: Example: 
+     * @param    smsCampaignId    Required parameter: ID of SMS Campaign to cancel
      * @return    Returns the String response from the API call 
      */
     public String cancelSmsCampaign(
@@ -373,7 +389,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Cancel sms campaign
-     * @param    smsCampaignId    Required parameter: Example: 
+     * @param    smsCampaignId    Required parameter: ID of SMS Campaign to cancel
      * @return    Returns the void response from the API call 
      */
     public void cancelSmsCampaignAsync(
@@ -389,7 +405,11 @@ public class SmsCampaignController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4867464391048672901L;
+=======
+            private static final long serialVersionUID = 5499635244518014753L;
+>>>>>>> Stashed changes
             {
                     put( "sms_campaign_id", smsCampaignId );
             }});
@@ -398,7 +418,11 @@ public class SmsCampaignController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5007187368029902907L;
+=======
+            private static final long serialVersionUID = 5317498531498952421L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -492,7 +516,11 @@ public class SmsCampaignController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5206491864442525122L;
+=======
+            private static final long serialVersionUID = 5471519333919319154L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -557,7 +585,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Get specific sms campaign
-     * @param    smsCampaignId    Required parameter: Example: 
+     * @param    smsCampaignId    Required parameter: ID of SMS campaign to retrieve
      * @return    Returns the String response from the API call 
      */
     public String getSmsCampaign(
@@ -572,7 +600,7 @@ public class SmsCampaignController extends BaseController {
 
     /**
      * Get specific sms campaign
-     * @param    smsCampaignId    Required parameter: Example: 
+     * @param    smsCampaignId    Required parameter: ID of SMS campaign to retrieve
      * @return    Returns the void response from the API call 
      */
     public void getSmsCampaignAsync(
@@ -588,7 +616,11 @@ public class SmsCampaignController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5233847024194800682L;
+=======
+            private static final long serialVersionUID = 4667658229327398910L;
+>>>>>>> Stashed changes
             {
                     put( "sms_campaign_id", smsCampaignId );
             }});
@@ -597,7 +629,11 @@ public class SmsCampaignController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5517335777325105271L;
+=======
+            private static final long serialVersionUID = 5082161269140557175L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }

@@ -70,7 +70,11 @@ public class AccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5034340368469447589L;
+=======
+            private static final long serialVersionUID = 5097481223721690130L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -135,7 +139,7 @@ public class AccountController extends BaseController {
 
     /**
      * Create An Account
-     * @param    account    Required parameter: Example: 
+     * @param    account    Required parameter: Account model
      * @return    Returns the String response from the API call 
      */
     public String createAccount(
@@ -150,7 +154,7 @@ public class AccountController extends BaseController {
 
     /**
      * Create An Account
-     * @param    account    Required parameter: Example: 
+     * @param    account    Required parameter: Account model
      * @return    Returns the void response from the API call 
      */
     public void createAccountAsync(
@@ -172,7 +176,11 @@ public class AccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5652618454459658062L;
+=======
+            private static final long serialVersionUID = 5098276243207191310L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -237,7 +245,7 @@ public class AccountController extends BaseController {
 
     /**
      * Send account activation token
-     * @param    accountVerify    Required parameter: Example: 
+     * @param    accountVerify    Required parameter: Account details
      * @return    Returns the String response from the API call 
      */
     public String accountVerifySend(
@@ -252,7 +260,7 @@ public class AccountController extends BaseController {
 
     /**
      * Send account activation token
-     * @param    accountVerify    Required parameter: Example: 
+     * @param    accountVerify    Required parameter: Account details
      * @return    Returns the void response from the API call 
      */
     public void accountVerifySendAsync(
@@ -274,7 +282,11 @@ public class AccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4961103409997900488L;
+=======
+            private static final long serialVersionUID = 5347308134789429081L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -370,7 +382,11 @@ public class AccountController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4618928590819776409L;
+=======
+            private static final long serialVersionUID = 5116976593955195958L;
+>>>>>>> Stashed changes
             {
                     put( "activation_token", activationToken );
             }});
@@ -379,7 +395,11 @@ public class AccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5055718301942536870L;
+=======
+            private static final long serialVersionUID = 5634443490312144691L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -444,7 +464,7 @@ public class AccountController extends BaseController {
 
     /**
      * Forgot username
-     * @param    email    Required parameter: Example: 
+     * @param    email    Required parameter: Email belonging to account
      * @return    Returns the String response from the API call 
      */
     public String forgotUsername(
@@ -459,7 +479,7 @@ public class AccountController extends BaseController {
 
     /**
      * Forgot username
-     * @param    email    Required parameter: Example: 
+     * @param    email    Required parameter: Email belonging to account
      * @return    Returns the void response from the API call 
      */
     public void forgotUsernameAsync(
@@ -481,7 +501,11 @@ public class AccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 4905656792040614982L;
+=======
+            private static final long serialVersionUID = 5408561821845532185L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -545,7 +569,7 @@ public class AccountController extends BaseController {
 
     /**
      * Forgot password
-     * @param    username    Required parameter: Example: 
+     * @param    username    Required parameter: Username belonging to account
      * @return    Returns the String response from the API call 
      */
     public String forgotPassword(
@@ -560,7 +584,7 @@ public class AccountController extends BaseController {
 
     /**
      * Forgot password
-     * @param    username    Required parameter: Example: 
+     * @param    username    Required parameter: Username belonging to account
      * @return    Returns the void response from the API call 
      */
     public void forgotPasswordAsync(
@@ -582,7 +606,11 @@ public class AccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5175413701189838282L;
+=======
+            private static final long serialVersionUID = 4736062013946913531L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
@@ -647,7 +675,7 @@ public class AccountController extends BaseController {
 
     /**
      * Verify forgot password
-     * @param    verifyPassword    Required parameter: Example: 
+     * @param    verifyPassword    Required parameter: verifyPassword data
      * @return    Returns the String response from the API call 
      */
     public String verifyForgotPassword(
@@ -662,7 +690,7 @@ public class AccountController extends BaseController {
 
     /**
      * Verify forgot password
-     * @param    verifyPassword    Required parameter: Example: 
+     * @param    verifyPassword    Required parameter: verifyPassword data
      * @return    Returns the void response from the API call 
      */
     public void verifyForgotPasswordAsync(
@@ -684,7 +712,11 @@ public class AccountController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
+<<<<<<< Updated upstream
             private static final long serialVersionUID = 5171904867536146103L;
+=======
+            private static final long serialVersionUID = 5672701799735328759L;
+>>>>>>> Stashed changes
             {
                     put( "user-agent", "ClickSendSDK" );
             }
